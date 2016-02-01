@@ -1,0 +1,124 @@
+<!-- 
+  ===========================================================================
+   Ant build file for JCLAL.
+   Requires Java 1.6.   
+
+   Type "ant" for building the source code and generate the jar file.
+   Type "ant clean" for cleaning the project.
+  ===========================================================================
+-->
+
+<project basedir="." default="package" name="jclal">
+	<property environment="env" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.7" />
+	<property name="source" value="1.7" />
+	<property name="src" value="src/main/java" />
+	<property name="src-test" value="src/test/java" />
+
+
+	<!-- The base directory for all libraries (jar) files -->
+	<path id="build.classpath">
+		<fileset dir="libs">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<!-- Classpath and lib dependencies -->
+	<path id="jclal.classpath">
+		<pathelement location="target/src-classes" />
+		<pathelement location="target/test-classes" />
+		<pathelement location="libs/activation-1.1.jar" />
+		<pathelement location="libs/commons-beanutils-1.7.0.jar" />
+		<pathelement location="libs/commons-beanutils-core-1.7.0.jar" />
+		<pathelement location="libs/commons-collections-3.2.1.jar" />
+		<pathelement location="libs/commons-configuration-1.5.jar" />
+		<pathelement location="libs/commons-digester-1.8.jar" />
+		<pathelement location="libs/commons-lang-2.4.jar" />
+		<pathelement location="libs/commons-logging-1.1.1.jar" />
+		<pathelement location="libs/epsgraphics-1.2.jar" />
+		<pathelement location="libs/hamcrest-core-1.1.jar" />
+		<pathelement location="libs/java-cup-10k.jar" />
+		<pathelement location="libs/jcommon-1.0.23.jar" />
+		<pathelement location="libs/jfreechart-1.0.19.jar" />
+		<pathelement location="libs/jfreesvg-3.0.jar" />
+		<pathelement location="libs/junit-4.10.jar" />
+		<pathelement location="libs/lucene-core-2.4.0.jar" />
+		<pathelement location="libs/mail-1.5.0-b01.jar" />
+		<pathelement location="libs/moa-2014.04.jar" />
+		<pathelement location="libs/mulan-1.4.0.jar" />
+		<pathelement location="libs/multiInstanceFilters-1.0.5.jar" />
+		<pathelement location="libs/multiInstanceLearning-1.0.7.jar" />
+		<pathelement location="libs/pentaho-package-manager-1.0.8.jar" />
+		<pathelement location="libs/weka-dev-3.7.10.jar" />
+	</path>
+
+	<!-- Initialization -->
+	<target name="init">
+		<mkdir dir="target/src-classes" />
+		<mkdir dir="target/test-classes" />
+		<mkdir dir="build" />
+		<copy includeemptydirs="false" todir="target/src-classes">
+			<fileset dir="${src}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<copy includeemptydirs="false" todir="target/test-classes">
+			<fileset dir="${src-test}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="target/src-classes" includeantruntime="false" source="${source}" target="${target}">
+			<src path="${src}" />
+			<classpath refid="jclal.classpath" />
+		</javac>
+		<javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" includeantruntime="false" source="${source}" target="${target}">
+			<src path="${src-test}" />
+			<classpath refid="jclal.classpath" />
+		</javac>
+	</target>
+
+
+	<!-- Build jar file -->
+	<target name="package" depends="build-project" description="Make package">
+
+		<pathconvert property="mf.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<!-- remove absolute path -->
+					<flattenmapper />
+
+					<!-- add lib/ prefix -->
+					<globmapper from="*" to="libs/*" />
+				</chainedmapper>
+			</mapper>
+			<path refid="build.classpath" />
+		</pathconvert>
+
+		<jar jarfile="jclal-1.1.jar" basedir="target/src-classes" index="no" compress="yes">
+			<manifest>
+				<attribute name="Main-Class" value="net.sf.jclal.experiment.RunExperiment" />
+				<attribute name="Created-By" value="Oscar Reyes" />
+				<attribute name="Implementation-Version" value="1.0.0" />
+				<attribute name="Class-Path" value="${mf.classpath}" />
+			</manifest>
+			<fileset dir="target/src-classes" />
+			<fileset dir="build">
+				<include name="**/*.class" />
+			</fileset>
+		</jar>
+		<delete dir="build" />
+	</target>
+
+	<!-- Project clean -->
+	<target name="clean">
+		<delete dir="target/src-classes" />
+		<delete dir="target/test-classes" />
+		<delete dir="build" />
+		<delete file="jclal-1.1.jar" />
+	</target>
+</project>

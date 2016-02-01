@@ -1,0 +1,1678 @@
+Mon Feb 01 13.37.02 CET 2016
+Dataset: musicout
+Test set size: 202
+Initial Labelled set size: 19
+Initial Unlabelled set size: 372
+Batch mode: QBestBatchMode
+Batch size: 5
+Classifiers: ParallelBinaryRelevance(SMOsync)
+Scenario: PoolBasedSamplingScenario
+Query strategy: MultiLabelBinMinQueryStrategy
+Time begining: Mon Feb 01 13.37.02 CET 2016
+		
+Iteration: 1
+Labeled set size: 19
+Unlabelled set size: 372
+	
+Geometric Mean Average Interpolated Precision: 0.579
+Hamming Loss: 0.2838
+Macro-averaged AUC: 0.7225
+Example-Based Specificity: 0.9419
+ErrorSetSize: 2.7525
+Test time: 203.0
+Accumulative iteration time: 34.0
+Example-Based Recall: 0.245
+Average Precision: 0.6468
+Micro-averaged F-Measure: 0.3768
+Subset Accuracy: 0.0891
+Micro-averaged Specificity: 0.9397
+Macro-averaged F-Measure: 0.3563
+OneError: 0.4505
+Ranking Loss: 0.3693
+Example-Based Precision: 0.3465
+Example-Based F Measure: 0.2734
+Macro-averaged Recall: 0.2615
+Coverage: 2.8812
+Macro-averaged Specificity: 0.9369
+Iteration time: 34.0
+Mean Average Interpolated Precision: 0.6014
+Micro-averaged Precision: 0.6797
+Micro-averaged Recall: 0.2607
+Geometric Mean Average Precision: 0.5499
+Example-Based Accuracy: 0.2269
+Macro-averaged Precision: 0.6328
+Micro-averaged AUC: 0.6982
+Instances selection time: 9.0
+IsError: 0.7624
+Mean Average Precision: 0.5838
+Training time: 25.0
+		
+Iteration: 2
+Labeled set size: 24
+Unlabelled set size: 367
+	
+Geometric Mean Average Interpolated Precision: 0.557
+Hamming Loss: 0.288
+Macro-averaged AUC: 0.6819
+Example-Based Specificity: 0.8717
+ErrorSetSize: 2.5
+Test time: 125.0
+Accumulative iteration time: 67.0
+Example-Based Recall: 0.3952
+Average Precision: 0.667
+Micro-averaged F-Measure: 0.4768
+Subset Accuracy: 0.0941
+Micro-averaged Specificity: 0.8659
+Macro-averaged F-Measure: 0.4328
+OneError: 0.4356
+Ranking Loss: 0.335
+Example-Based Precision: 0.4773
+Example-Based F Measure: 0.4042
+Macro-averaged Recall: 0.3741
+Coverage: 2.7871
+Macro-averaged Specificity: 0.8517
+Iteration time: 33.0
+Mean Average Interpolated Precision: 0.5764
+Micro-averaged Precision: 0.5933
+Micro-averaged Recall: 0.3985
+Geometric Mean Average Precision: 0.5174
+Example-Based Accuracy: 0.3255
+Macro-averaged Precision: 0.5825
+Micro-averaged AUC: 0.7145
+Instances selection time: 5.0
+IsError: 0.7129
+Mean Average Precision: 0.5473
+Training time: 28.0
+		
+Iteration: 3
+Labeled set size: 29
+Unlabelled set size: 362
+	
+Geometric Mean Average Interpolated Precision: 0.5781
+Hamming Loss: 0.2896
+Macro-averaged AUC: 0.685
+Example-Based Specificity: 0.8155
+ErrorSetSize: 2.8564
+Test time: 83.0
+Accumulative iteration time: 95.0
+Example-Based Recall: 0.4884
+Average Precision: 0.6569
+Micro-averaged F-Measure: 0.5339
+Subset Accuracy: 0.1634
+Micro-averaged Specificity: 0.8118
+Macro-averaged F-Measure: 0.521
+OneError: 0.4406
+Ranking Loss: 0.385
+Example-Based Precision: 0.505
+Example-Based F Measure: 0.4707
+Macro-averaged Recall: 0.5097
+Coverage: 2.9901
+Macro-averaged Specificity: 0.8041
+Iteration time: 28.0
+Mean Average Interpolated Precision: 0.5984
+Micro-averaged Precision: 0.5678
+Micro-averaged Recall: 0.5038
+Geometric Mean Average Precision: 0.537
+Example-Based Accuracy: 0.3926
+Macro-averaged Precision: 0.546
+Micro-averaged AUC: 0.6709
+Instances selection time: 5.0
+IsError: 0.6931
+Mean Average Precision: 0.5708
+Training time: 23.0
+		
+Iteration: 4
+Labeled set size: 34
+Unlabelled set size: 357
+	
+Geometric Mean Average Interpolated Precision: 0.5736
+Hamming Loss: 0.297
+Macro-averaged AUC: 0.6847
+Example-Based Specificity: 0.8028
+ErrorSetSize: 2.8465
+Test time: 83.0
+Accumulative iteration time: 120.0
+Example-Based Recall: 0.4868
+Average Precision: 0.6387
+Micro-averaged F-Measure: 0.5325
+Subset Accuracy: 0.1634
+Micro-averaged Specificity: 0.7958
+Macro-averaged F-Measure: 0.5175
+OneError: 0.4802
+Ranking Loss: 0.3857
+Example-Based Precision: 0.512
+Example-Based F Measure: 0.4729
+Macro-averaged Recall: 0.519
+Coverage: 2.9851
+Macro-averaged Specificity: 0.7891
+Iteration time: 25.0
+Mean Average Interpolated Precision: 0.5958
+Micro-averaged Precision: 0.5526
+Micro-averaged Recall: 0.5138
+Geometric Mean Average Precision: 0.5281
+Example-Based Accuracy: 0.3927
+Macro-averaged Precision: 0.5285
+Micro-averaged AUC: 0.656
+Instances selection time: 3.0
+IsError: 0.7178
+Mean Average Precision: 0.5635
+Training time: 22.0
+		
+Iteration: 5
+Labeled set size: 39
+Unlabelled set size: 352
+	
+Geometric Mean Average Interpolated Precision: 0.5764
+Hamming Loss: 0.2979
+Macro-averaged AUC: 0.7107
+Example-Based Specificity: 0.8056
+ErrorSetSize: 2.396
+Test time: 84.0
+Accumulative iteration time: 147.0
+Example-Based Recall: 0.4777
+Average Precision: 0.6764
+Micro-averaged F-Measure: 0.5256
+Subset Accuracy: 0.1485
+Micro-averaged Specificity: 0.8007
+Macro-averaged F-Measure: 0.4958
+OneError: 0.4455
+Ranking Loss: 0.3208
+Example-Based Precision: 0.5017
+Example-Based F Measure: 0.4631
+Macro-averaged Recall: 0.4929
+Coverage: 2.7376
+Macro-averaged Specificity: 0.7893
+Iteration time: 27.0
+Mean Average Interpolated Precision: 0.597
+Micro-averaged Precision: 0.5525
+Micro-averaged Recall: 0.5013
+Geometric Mean Average Precision: 0.5518
+Example-Based Accuracy: 0.3822
+Macro-averaged Precision: 0.5331
+Micro-averaged AUC: 0.7006
+Instances selection time: 3.0
+IsError: 0.6881
+Mean Average Precision: 0.5804
+Training time: 24.0
+		
+Iteration: 6
+Labeled set size: 44
+Unlabelled set size: 347
+	
+Geometric Mean Average Interpolated Precision: 0.6006
+Hamming Loss: 0.2797
+Macro-averaged AUC: 0.7441
+Example-Based Specificity: 0.8227
+ErrorSetSize: 2.2129
+Test time: 90.0
+Accumulative iteration time: 183.0
+Example-Based Recall: 0.5025
+Average Precision: 0.6898
+Micro-averaged F-Measure: 0.551
+Subset Accuracy: 0.1535
+Micro-averaged Specificity: 0.818
+Macro-averaged F-Measure: 0.5401
+OneError: 0.4406
+Ranking Loss: 0.297
+Example-Based Precision: 0.5182
+Example-Based F Measure: 0.4826
+Macro-averaged Recall: 0.5252
+Coverage: 2.703
+Macro-averaged Specificity: 0.8074
+Iteration time: 36.0
+Mean Average Interpolated Precision: 0.6276
+Micro-averaged Precision: 0.5843
+Micro-averaged Recall: 0.5213
+Geometric Mean Average Precision: 0.5782
+Example-Based Accuracy: 0.4016
+Macro-averaged Precision: 0.5692
+Micro-averaged AUC: 0.7346
+Instances selection time: 7.0
+IsError: 0.6733
+Mean Average Precision: 0.6103
+Training time: 29.0
+		
+Iteration: 7
+Labeled set size: 49
+Unlabelled set size: 342
+	
+Geometric Mean Average Interpolated Precision: 0.6056
+Hamming Loss: 0.2715
+Macro-averaged AUC: 0.7467
+Example-Based Specificity: 0.8238
+ErrorSetSize: 2.1485
+Test time: 116.0
+Accumulative iteration time: 209.0
+Example-Based Recall: 0.5173
+Average Precision: 0.7014
+Micro-averaged F-Measure: 0.5688
+Subset Accuracy: 0.1782
+Micro-averaged Specificity: 0.8192
+Macro-averaged F-Measure: 0.5621
+OneError: 0.4208
+Ranking Loss: 0.2886
+Example-Based Precision: 0.5408
+Example-Based F Measure: 0.5054
+Macro-averaged Recall: 0.5527
+Coverage: 2.6485
+Macro-averaged Specificity: 0.8103
+Iteration time: 26.0
+Mean Average Interpolated Precision: 0.6358
+Micro-averaged Precision: 0.5962
+Micro-averaged Recall: 0.5439
+Geometric Mean Average Precision: 0.5801
+Example-Based Accuracy: 0.4255
+Macro-averaged Precision: 0.5857
+Micro-averaged AUC: 0.7347
+Instances selection time: 4.0
+IsError: 0.6436
+Mean Average Precision: 0.6165
+Training time: 22.0
+		
+Iteration: 8
+Labeled set size: 54
+Unlabelled set size: 337
+	
+Geometric Mean Average Interpolated Precision: 0.644
+Hamming Loss: 0.2682
+Macro-averaged AUC: 0.7574
+Example-Based Specificity: 0.8271
+ErrorSetSize: 1.7228
+Test time: 81.0
+Accumulative iteration time: 234.0
+Example-Based Recall: 0.5371
+Average Precision: 0.7352
+Micro-averaged F-Measure: 0.5718
+Subset Accuracy: 0.1485
+Micro-averaged Specificity: 0.8241
+Macro-averaged F-Measure: 0.573
+OneError: 0.3812
+Ranking Loss: 0.2301
+Example-Based Precision: 0.5392
+Example-Based F Measure: 0.5093
+Macro-averaged Recall: 0.5498
+Coverage: 2.2525
+Macro-averaged Specificity: 0.8166
+Iteration time: 25.0
+Mean Average Interpolated Precision: 0.6625
+Micro-averaged Precision: 0.6028
+Micro-averaged Recall: 0.5439
+Geometric Mean Average Precision: 0.5968
+Example-Based Accuracy: 0.4174
+Macro-averaged Precision: 0.6026
+Micro-averaged AUC: 0.7807
+Instances selection time: 4.0
+IsError: 0.6287
+Mean Average Precision: 0.6286
+Training time: 21.0
+		
+Iteration: 9
+Labeled set size: 59
+Unlabelled set size: 332
+	
+Geometric Mean Average Interpolated Precision: 0.6446
+Hamming Loss: 0.255
+Macro-averaged AUC: 0.7744
+Example-Based Specificity: 0.8342
+ErrorSetSize: 1.6683
+Test time: 83.0
+Accumulative iteration time: 260.0
+Example-Based Recall: 0.5685
+Average Precision: 0.7409
+Micro-averaged F-Measure: 0.5961
+Subset Accuracy: 0.1832
+Micro-averaged Specificity: 0.8303
+Macro-averaged F-Measure: 0.594
+OneError: 0.3713
+Ranking Loss: 0.2223
+Example-Based Precision: 0.578
+Example-Based F Measure: 0.539
+Macro-averaged Recall: 0.577
+Coverage: 2.2475
+Macro-averaged Specificity: 0.8219
+Iteration time: 26.0
+Mean Average Interpolated Precision: 0.659
+Micro-averaged Precision: 0.623
+Micro-averaged Recall: 0.5714
+Geometric Mean Average Precision: 0.6086
+Example-Based Accuracy: 0.4483
+Macro-averaged Precision: 0.6186
+Micro-averaged AUC: 0.7849
+Instances selection time: 4.0
+IsError: 0.6485
+Mean Average Precision: 0.6309
+Training time: 22.0
+		
+Iteration: 10
+Labeled set size: 64
+Unlabelled set size: 327
+	
+Geometric Mean Average Interpolated Precision: 0.6583
+Hamming Loss: 0.2492
+Macro-averaged AUC: 0.782
+Example-Based Specificity: 0.849
+ErrorSetSize: 1.5644
+Test time: 87.0
+Accumulative iteration time: 286.0
+Example-Based Recall: 0.5545
+Average Precision: 0.7431
+Micro-averaged F-Measure: 0.5952
+Subset Accuracy: 0.1832
+Micro-averaged Specificity: 0.8462
+Macro-averaged F-Measure: 0.5945
+OneError: 0.3812
+Ranking Loss: 0.2114
+Example-Based Precision: 0.5701
+Example-Based F Measure: 0.5319
+Macro-averaged Recall: 0.5641
+Coverage: 2.0941
+Macro-averaged Specificity: 0.8397
+Iteration time: 26.0
+Mean Average Interpolated Precision: 0.6736
+Micro-averaged Precision: 0.6398
+Micro-averaged Recall: 0.5564
+Geometric Mean Average Precision: 0.625
+Example-Based Accuracy: 0.4447
+Macro-averaged Precision: 0.636
+Micro-averaged AUC: 0.8051
+Instances selection time: 4.0
+IsError: 0.6287
+Mean Average Precision: 0.6503
+Training time: 22.0
+		
+Iteration: 11
+Labeled set size: 69
+Unlabelled set size: 322
+	
+Geometric Mean Average Interpolated Precision: 0.6685
+Hamming Loss: 0.245
+Macro-averaged AUC: 0.7914
+Example-Based Specificity: 0.8476
+ErrorSetSize: 1.5149
+Test time: 85.0
+Accumulative iteration time: 311.0
+Example-Based Recall: 0.5693
+Average Precision: 0.7514
+Micro-averaged F-Measure: 0.6077
+Subset Accuracy: 0.203
+Micro-averaged Specificity: 0.8426
+Macro-averaged F-Measure: 0.6081
+OneError: 0.3663
+Ranking Loss: 0.2084
+Example-Based Precision: 0.5837
+Example-Based F Measure: 0.5438
+Macro-averaged Recall: 0.5827
+Coverage: 2.0693
+Macro-averaged Specificity: 0.837
+Iteration time: 25.0
+Mean Average Interpolated Precision: 0.6808
+Micro-averaged Precision: 0.6425
+Micro-averaged Recall: 0.5764
+Geometric Mean Average Precision: 0.6378
+Example-Based Accuracy: 0.4568
+Macro-averaged Precision: 0.6385
+Micro-averaged AUC: 0.8105
+Instances selection time: 3.0
+IsError: 0.5842
+Mean Average Precision: 0.6577
+Training time: 22.0
+		
+Iteration: 12
+Labeled set size: 74
+Unlabelled set size: 317
+	
+Geometric Mean Average Interpolated Precision: 0.673
+Hamming Loss: 0.2483
+Macro-averaged AUC: 0.7927
+Example-Based Specificity: 0.8436
+ErrorSetSize: 1.4752
+Test time: 133.0
+Accumulative iteration time: 339.0
+Example-Based Recall: 0.5685
+Average Precision: 0.7564
+Micro-averaged F-Measure: 0.6045
+Subset Accuracy: 0.1832
+Micro-averaged Specificity: 0.8376
+Macro-averaged F-Measure: 0.6035
+OneError: 0.3614
+Ranking Loss: 0.2027
+Example-Based Precision: 0.5829
+Example-Based F Measure: 0.5438
+Macro-averaged Recall: 0.5815
+Coverage: 2.0693
+Macro-averaged Specificity: 0.8329
+Iteration time: 28.0
+Mean Average Interpolated Precision: 0.6875
+Micro-averaged Precision: 0.6354
+Micro-averaged Recall: 0.5764
+Geometric Mean Average Precision: 0.6363
+Example-Based Accuracy: 0.4548
+Macro-averaged Precision: 0.6297
+Micro-averaged AUC: 0.8105
+Instances selection time: 3.0
+IsError: 0.5743
+Mean Average Precision: 0.6612
+Training time: 25.0
+		
+Iteration: 13
+Labeled set size: 79
+Unlabelled set size: 312
+	
+Geometric Mean Average Interpolated Precision: 0.6654
+Hamming Loss: 0.2475
+Macro-averaged AUC: 0.7932
+Example-Based Specificity: 0.8411
+ErrorSetSize: 1.4554
+Test time: 123.0
+Accumulative iteration time: 371.0
+Example-Based Recall: 0.5792
+Average Precision: 0.7621
+Micro-averaged F-Measure: 0.6073
+Subset Accuracy: 0.1733
+Micro-averaged Specificity: 0.8364
+Macro-averaged F-Measure: 0.6075
+OneError: 0.3366
+Ranking Loss: 0.1994
+Example-Based Precision: 0.6027
+Example-Based F Measure: 0.5559
+Macro-averaged Recall: 0.5878
+Coverage: 2.0792
+Macro-averaged Specificity: 0.8325
+Iteration time: 32.0
+Mean Average Interpolated Precision: 0.6803
+Micro-averaged Precision: 0.6356
+Micro-averaged Recall: 0.5815
+Geometric Mean Average Precision: 0.6351
+Example-Based Accuracy: 0.4622
+Macro-averaged Precision: 0.6308
+Micro-averaged AUC: 0.8123
+Instances selection time: 6.0
+IsError: 0.5842
+Mean Average Precision: 0.6597
+Training time: 26.0
+		
+Iteration: 14
+Labeled set size: 84
+Unlabelled set size: 307
+	
+Geometric Mean Average Interpolated Precision: 0.6671
+Hamming Loss: 0.2541
+Macro-averaged AUC: 0.7881
+Example-Based Specificity: 0.8402
+ErrorSetSize: 1.5099
+Test time: 84.0
+Accumulative iteration time: 399.0
+Example-Based Recall: 0.5586
+Average Precision: 0.7562
+Micro-averaged F-Measure: 0.5926
+Subset Accuracy: 0.1584
+Micro-averaged Specificity: 0.8364
+Macro-averaged F-Measure: 0.5957
+OneError: 0.3366
+Ranking Loss: 0.2065
+Example-Based Precision: 0.5751
+Example-Based F Measure: 0.5334
+Macro-averaged Recall: 0.5681
+Coverage: 2.1188
+Macro-averaged Specificity: 0.8322
+Iteration time: 28.0
+Mean Average Interpolated Precision: 0.6816
+Micro-averaged Precision: 0.6275
+Micro-averaged Recall: 0.5614
+Geometric Mean Average Precision: 0.6341
+Example-Based Accuracy: 0.4408
+Macro-averaged Precision: 0.6325
+Micro-averaged AUC: 0.8064
+Instances selection time: 4.0
+IsError: 0.6139
+Mean Average Precision: 0.6577
+Training time: 24.0
+		
+Iteration: 15
+Labeled set size: 89
+Unlabelled set size: 302
+	
+Geometric Mean Average Interpolated Precision: 0.6694
+Hamming Loss: 0.2508
+Macro-averaged AUC: 0.793
+Example-Based Specificity: 0.8343
+ErrorSetSize: 1.4455
+Test time: 114.0
+Accumulative iteration time: 432.0
+Example-Based Recall: 0.5833
+Average Precision: 0.7653
+Micro-averaged F-Measure: 0.6062
+Subset Accuracy: 0.1436
+Micro-averaged Specificity: 0.829
+Macro-averaged F-Measure: 0.6113
+OneError: 0.3119
+Ranking Loss: 0.1963
+Example-Based Precision: 0.578
+Example-Based F Measure: 0.5443
+Macro-averaged Recall: 0.5927
+Coverage: 2.0743
+Macro-averaged Specificity: 0.8243
+Iteration time: 33.0
+Mean Average Interpolated Precision: 0.684
+Micro-averaged Precision: 0.6273
+Micro-averaged Recall: 0.5865
+Geometric Mean Average Precision: 0.6385
+Example-Based Accuracy: 0.4488
+Macro-averaged Precision: 0.6381
+Micro-averaged AUC: 0.8092
+Instances selection time: 6.0
+IsError: 0.6287
+Mean Average Precision: 0.663
+Training time: 27.0
+		
+Iteration: 16
+Labeled set size: 94
+Unlabelled set size: 297
+	
+Geometric Mean Average Interpolated Precision: 0.6756
+Hamming Loss: 0.25
+Macro-averaged AUC: 0.7941
+Example-Based Specificity: 0.8422
+ErrorSetSize: 1.4406
+Test time: 85.0
+Accumulative iteration time: 460.0
+Example-Based Recall: 0.571
+Average Precision: 0.7638
+Micro-averaged F-Measure: 0.6018
+Subset Accuracy: 0.1535
+Micro-averaged Specificity: 0.8364
+Macro-averaged F-Measure: 0.5992
+OneError: 0.3218
+Ranking Loss: 0.1963
+Example-Based Precision: 0.5776
+Example-Based F Measure: 0.5396
+Macro-averaged Recall: 0.5741
+Coverage: 2.0891
+Macro-averaged Specificity: 0.8307
+Iteration time: 28.0
+Mean Average Interpolated Precision: 0.6885
+Micro-averaged Precision: 0.6326
+Micro-averaged Recall: 0.5739
+Geometric Mean Average Precision: 0.6473
+Example-Based Accuracy: 0.4472
+Macro-averaged Precision: 0.6319
+Micro-averaged AUC: 0.8118
+Instances selection time: 3.0
+IsError: 0.6139
+Mean Average Precision: 0.6671
+Training time: 25.0
+		
+Iteration: 17
+Labeled set size: 99
+Unlabelled set size: 292
+	
+Geometric Mean Average Interpolated Precision: 0.6784
+Hamming Loss: 0.245
+Macro-averaged AUC: 0.7954
+Example-Based Specificity: 0.8385
+ErrorSetSize: 1.4158
+Test time: 86.0
+Accumulative iteration time: 489.0
+Example-Based Recall: 0.5883
+Average Precision: 0.7696
+Micro-averaged F-Measure: 0.6158
+Subset Accuracy: 0.1832
+Micro-averaged Specificity: 0.8327
+Macro-averaged F-Measure: 0.612
+OneError: 0.3168
+Ranking Loss: 0.1946
+Example-Based Precision: 0.5953
+Example-Based F Measure: 0.5574
+Macro-averaged Recall: 0.596
+Coverage: 2.0545
+Macro-averaged Specificity: 0.828
+Iteration time: 29.0
+Mean Average Interpolated Precision: 0.6899
+Micro-averaged Precision: 0.6364
+Micro-averaged Recall: 0.5965
+Geometric Mean Average Precision: 0.6531
+Example-Based Accuracy: 0.4678
+Macro-averaged Precision: 0.6332
+Micro-averaged AUC: 0.813
+Instances selection time: 3.0
+IsError: 0.5743
+Mean Average Precision: 0.6717
+Training time: 26.0
+		
+Iteration: 18
+Labeled set size: 104
+Unlabelled set size: 287
+	
+Geometric Mean Average Interpolated Precision: 0.676
+Hamming Loss: 0.2442
+Macro-averaged AUC: 0.7918
+Example-Based Specificity: 0.8453
+ErrorSetSize: 1.4158
+Test time: 85.0
+Accumulative iteration time: 517.0
+Example-Based Recall: 0.5743
+Average Precision: 0.7649
+Micro-averaged F-Measure: 0.6126
+Subset Accuracy: 0.1535
+Micro-averaged Specificity: 0.8389
+Macro-averaged F-Measure: 0.6088
+OneError: 0.3267
+Ranking Loss: 0.1964
+Example-Based Precision: 0.5908
+Example-Based F Measure: 0.5475
+Macro-averaged Recall: 0.5858
+Coverage: 2.0594
+Macro-averaged Specificity: 0.8347
+Iteration time: 28.0
+Mean Average Interpolated Precision: 0.6881
+Micro-averaged Precision: 0.6411
+Micro-averaged Recall: 0.5865
+Geometric Mean Average Precision: 0.6461
+Example-Based Accuracy: 0.455
+Macro-averaged Precision: 0.6405
+Micro-averaged AUC: 0.8078
+Instances selection time: 4.0
+IsError: 0.5891
+Mean Average Precision: 0.6663
+Training time: 24.0
+		
+Iteration: 19
+Labeled set size: 109
+Unlabelled set size: 282
+	
+Geometric Mean Average Interpolated Precision: 0.6769
+Hamming Loss: 0.2483
+Macro-averaged AUC: 0.7945
+Example-Based Specificity: 0.8411
+ErrorSetSize: 1.4109
+Test time: 89.0
+Accumulative iteration time: 546.0
+Example-Based Recall: 0.5767
+Average Precision: 0.7668
+Micro-averaged F-Measure: 0.6076
+Subset Accuracy: 0.1535
+Micro-averaged Specificity: 0.8339
+Macro-averaged F-Measure: 0.6079
+OneError: 0.3267
+Ranking Loss: 0.1957
+Example-Based Precision: 0.578
+Example-Based F Measure: 0.5423
+Macro-averaged Recall: 0.588
+Coverage: 2.0545
+Macro-averaged Specificity: 0.8303
+Iteration time: 29.0
+Mean Average Interpolated Precision: 0.6899
+Micro-averaged Precision: 0.6332
+Micro-averaged Recall: 0.584
+Geometric Mean Average Precision: 0.6492
+Example-Based Accuracy: 0.4505
+Macro-averaged Precision: 0.636
+Micro-averaged AUC: 0.8114
+Instances selection time: 4.0
+IsError: 0.5842
+Mean Average Precision: 0.6703
+Training time: 25.0
+		
+Iteration: 20
+Labeled set size: 114
+Unlabelled set size: 277
+	
+Geometric Mean Average Interpolated Precision: 0.67
+Hamming Loss: 0.2459
+Macro-averaged AUC: 0.7909
+Example-Based Specificity: 0.8449
+ErrorSetSize: 1.4851
+Test time: 89.0
+Accumulative iteration time: 575.0
+Example-Based Recall: 0.5776
+Average Precision: 0.7545
+Micro-averaged F-Measure: 0.611
+Subset Accuracy: 0.1584
+Micro-averaged Specificity: 0.8364
+Macro-averaged F-Measure: 0.6059
+OneError: 0.3465
+Ranking Loss: 0.2054
+Example-Based Precision: 0.5837
+Example-Based F Measure: 0.5435
+Macro-averaged Recall: 0.5883
+Coverage: 2.0891
+Macro-averaged Specificity: 0.8335
+Iteration time: 29.0
+Mean Average Interpolated Precision: 0.6837
+Micro-averaged Precision: 0.6376
+Micro-averaged Recall: 0.5865
+Geometric Mean Average Precision: 0.6448
+Example-Based Accuracy: 0.4521
+Macro-averaged Precision: 0.6301
+Micro-averaged AUC: 0.8072
+Instances selection time: 3.0
+IsError: 0.5941
+Mean Average Precision: 0.667
+Training time: 26.0
+		
+Iteration: 21
+Labeled set size: 119
+Unlabelled set size: 272
+	
+Geometric Mean Average Interpolated Precision: 0.6736
+Hamming Loss: 0.2417
+Macro-averaged AUC: 0.7932
+Example-Based Specificity: 0.8492
+ErrorSetSize: 1.4851
+Test time: 145.0
+Accumulative iteration time: 609.0
+Example-Based Recall: 0.5792
+Average Precision: 0.7517
+Micro-averaged F-Measure: 0.615
+Subset Accuracy: 0.1881
+Micro-averaged Specificity: 0.8426
+Macro-averaged F-Measure: 0.6103
+OneError: 0.3465
+Ranking Loss: 0.2085
+Example-Based Precision: 0.5875
+Example-Based F Measure: 0.5478
+Macro-averaged Recall: 0.5907
+Coverage: 2.1089
+Macro-averaged Specificity: 0.841
+Iteration time: 34.0
+Mean Average Interpolated Precision: 0.687
+Micro-averaged Precision: 0.6464
+Micro-averaged Recall: 0.5865
+Geometric Mean Average Precision: 0.6429
+Example-Based Accuracy: 0.4625
+Macro-averaged Precision: 0.6438
+Micro-averaged AUC: 0.8066
+Instances selection time: 4.0
+IsError: 0.599
+Mean Average Precision: 0.6652
+Training time: 30.0
+		
+Iteration: 22
+Labeled set size: 124
+Unlabelled set size: 267
+	
+Geometric Mean Average Interpolated Precision: 0.6709
+Hamming Loss: 0.2417
+Macro-averaged AUC: 0.7912
+Example-Based Specificity: 0.8522
+ErrorSetSize: 1.4901
+Test time: 92.0
+Accumulative iteration time: 642.0
+Example-Based Recall: 0.5751
+Average Precision: 0.7492
+Micro-averaged F-Measure: 0.6119
+Subset Accuracy: 0.1733
+Micro-averaged Specificity: 0.8462
+Macro-averaged F-Measure: 0.6075
+OneError: 0.3614
+Ranking Loss: 0.2083
+Example-Based Precision: 0.5809
+Example-Based F Measure: 0.5423
+Macro-averaged Recall: 0.5825
+Coverage: 2.0891
+Macro-averaged Specificity: 0.8446
+Iteration time: 33.0
+Mean Average Interpolated Precision: 0.6855
+Micro-averaged Precision: 0.6489
+Micro-averaged Recall: 0.5789
+Geometric Mean Average Precision: 0.64
+Example-Based Accuracy: 0.4554
+Macro-averaged Precision: 0.6468
+Micro-averaged AUC: 0.8078
+Instances selection time: 4.0
+IsError: 0.599
+Mean Average Precision: 0.6636
+Training time: 29.0
+		
+Iteration: 23
+Labeled set size: 129
+Unlabelled set size: 262
+	
+Geometric Mean Average Interpolated Precision: 0.6761
+Hamming Loss: 0.2384
+Macro-averaged AUC: 0.7941
+Example-Based Specificity: 0.8542
+ErrorSetSize: 1.4406
+Test time: 101.0
+Accumulative iteration time: 673.0
+Example-Based Recall: 0.5825
+Average Precision: 0.7611
+Micro-averaged F-Measure: 0.6182
+Subset Accuracy: 0.1931
+Micro-averaged Specificity: 0.8475
+Macro-averaged F-Measure: 0.6122
+OneError: 0.3366
+Ranking Loss: 0.2009
+Example-Based Precision: 0.5924
+Example-Based F Measure: 0.5532
+Macro-averaged Recall: 0.5906
+Coverage: 2.0594
+Macro-averaged Specificity: 0.8457
+Iteration time: 31.0
+Mean Average Interpolated Precision: 0.6911
+Micro-averaged Precision: 0.6536
+Micro-averaged Recall: 0.5865
+Geometric Mean Average Precision: 0.6478
+Example-Based Accuracy: 0.4678
+Macro-averaged Precision: 0.6482
+Micro-averaged AUC: 0.8123
+Instances selection time: 4.0
+IsError: 0.5644
+Mean Average Precision: 0.6718
+Training time: 27.0
+		
+Iteration: 24
+Labeled set size: 134
+Unlabelled set size: 257
+	
+Geometric Mean Average Interpolated Precision: 0.6764
+Hamming Loss: 0.2384
+Macro-averaged AUC: 0.7947
+Example-Based Specificity: 0.8594
+ErrorSetSize: 1.3713
+Test time: 89.0
+Accumulative iteration time: 707.0
+Example-Based Recall: 0.5685
+Average Precision: 0.7664
+Micro-averaged F-Measure: 0.6131
+Subset Accuracy: 0.2079
+Micro-averaged Specificity: 0.8536
+Macro-averaged F-Measure: 0.6061
+OneError: 0.3317
+Ranking Loss: 0.1921
+Example-Based Precision: 0.5941
+Example-Based F Measure: 0.5492
+Macro-averaged Recall: 0.5781
+Coverage: 1.995
+Macro-averaged Specificity: 0.8521
+Iteration time: 34.0
+Mean Average Interpolated Precision: 0.691
+Micro-averaged Precision: 0.658
+Micro-averaged Recall: 0.5739
+Geometric Mean Average Precision: 0.6448
+Example-Based Accuracy: 0.4674
+Macro-averaged Precision: 0.6515
+Micro-averaged AUC: 0.8132
+Instances selection time: 3.0
+IsError: 0.5743
+Mean Average Precision: 0.6679
+Training time: 31.0
+		
+Iteration: 25
+Labeled set size: 139
+Unlabelled set size: 252
+	
+Geometric Mean Average Interpolated Precision: 0.6765
+Hamming Loss: 0.2426
+Macro-averaged AUC: 0.8003
+Example-Based Specificity: 0.8405
+ErrorSetSize: 1.4158
+Test time: 86.0
+Accumulative iteration time: 742.0
+Example-Based Recall: 0.5949
+Average Precision: 0.7612
+Micro-averaged F-Measure: 0.6192
+Subset Accuracy: 0.203
+Micro-averaged Specificity: 0.8352
+Macro-averaged F-Measure: 0.6159
+OneError: 0.3416
+Ranking Loss: 0.1982
+Example-Based Precision: 0.5837
+Example-Based F Measure: 0.5603
+Macro-averaged Recall: 0.6033
+Coverage: 2.0347
+Macro-averaged Specificity: 0.8327
+Iteration time: 35.0
+Mean Average Interpolated Precision: 0.6891
+Micro-averaged Precision: 0.6408
+Micro-averaged Recall: 0.599
+Geometric Mean Average Precision: 0.6456
+Example-Based Accuracy: 0.4757
+Macro-averaged Precision: 0.643
+Micro-averaged AUC: 0.8163
+Instances selection time: 4.0
+IsError: 0.5743
+Mean Average Precision: 0.6664
+Training time: 31.0
+		
+Iteration: 26
+Labeled set size: 144
+Unlabelled set size: 247
+	
+Geometric Mean Average Interpolated Precision: 0.6787
+Hamming Loss: 0.2368
+Macro-averaged AUC: 0.8023
+Example-Based Specificity: 0.8522
+ErrorSetSize: 1.4653
+Test time: 87.0
+Accumulative iteration time: 779.0
+Example-Based Recall: 0.5875
+Average Precision: 0.7548
+Micro-averaged F-Measure: 0.6229
+Subset Accuracy: 0.1881
+Micro-averaged Specificity: 0.8462
+Macro-averaged F-Measure: 0.6192
+OneError: 0.3564
+Ranking Loss: 0.2044
+Example-Based Precision: 0.6035
+Example-Based F Measure: 0.5619
+Macro-averaged Recall: 0.6003
+Coverage: 2.0396
+Macro-averaged Specificity: 0.8435
+Iteration time: 37.0
+Mean Average Interpolated Precision: 0.6912
+Micro-averaged Precision: 0.6547
+Micro-averaged Recall: 0.594
+Geometric Mean Average Precision: 0.6493
+Example-Based Accuracy: 0.4752
+Macro-averaged Precision: 0.6548
+Micro-averaged AUC: 0.8166
+Instances selection time: 4.0
+IsError: 0.5891
+Mean Average Precision: 0.6701
+Training time: 33.0
+		
+Iteration: 27
+Labeled set size: 149
+Unlabelled set size: 242
+	
+Geometric Mean Average Interpolated Precision: 0.6799
+Hamming Loss: 0.2335
+Macro-averaged AUC: 0.7973
+Example-Based Specificity: 0.8539
+ErrorSetSize: 1.5
+Test time: 117.0
+Accumulative iteration time: 812.0
+Example-Based Recall: 0.5932
+Average Precision: 0.7574
+Micro-averaged F-Measure: 0.6291
+Subset Accuracy: 0.2228
+Micro-averaged Specificity: 0.8475
+Macro-averaged F-Measure: 0.6209
+OneError: 0.3366
+Ranking Loss: 0.2091
+Example-Based Precision: 0.6093
+Example-Based F Measure: 0.5694
+Macro-averaged Recall: 0.6098
+Coverage: 2.0842
+Macro-averaged Specificity: 0.8449
+Iteration time: 33.0
+Mean Average Interpolated Precision: 0.6943
+Micro-averaged Precision: 0.6593
+Micro-averaged Recall: 0.6015
+Geometric Mean Average Precision: 0.648
+Example-Based Accuracy: 0.4884
+Macro-averaged Precision: 0.6508
+Micro-averaged AUC: 0.8112
+Instances selection time: 4.0
+IsError: 0.5842
+Mean Average Precision: 0.6711
+Training time: 29.0
+		
+Iteration: 28
+Labeled set size: 154
+Unlabelled set size: 237
+	
+Geometric Mean Average Interpolated Precision: 0.68
+Hamming Loss: 0.2409
+Macro-averaged AUC: 0.7974
+Example-Based Specificity: 0.8538
+ErrorSetSize: 1.4653
+Test time: 86.0
+Accumulative iteration time: 844.0
+Example-Based Recall: 0.5677
+Average Precision: 0.7565
+Micro-averaged F-Measure: 0.6117
+Subset Accuracy: 0.1931
+Micro-averaged Specificity: 0.8487
+Macro-averaged F-Measure: 0.6023
+OneError: 0.3465
+Ranking Loss: 0.2044
+Example-Based Precision: 0.5912
+Example-Based F Measure: 0.5464
+Macro-averaged Recall: 0.5828
+Coverage: 2.0594
+Macro-averaged Specificity: 0.8466
+Iteration time: 32.0
+Mean Average Interpolated Precision: 0.6939
+Micro-averaged Precision: 0.6516
+Micro-averaged Recall: 0.5764
+Geometric Mean Average Precision: 0.6471
+Example-Based Accuracy: 0.4616
+Macro-averaged Precision: 0.6409
+Micro-averaged AUC: 0.8115
+Instances selection time: 2.0
+IsError: 0.5941
+Mean Average Precision: 0.6708
+Training time: 30.0
+		
+Iteration: 29
+Labeled set size: 159
+Unlabelled set size: 232
+	
+Geometric Mean Average Interpolated Precision: 0.6832
+Hamming Loss: 0.2376
+Macro-averaged AUC: 0.8009
+Example-Based Specificity: 0.8561
+ErrorSetSize: 1.4554
+Test time: 100.0
+Accumulative iteration time: 875.0
+Example-Based Recall: 0.5693
+Average Precision: 0.7615
+Micro-averaged F-Measure: 0.616
+Subset Accuracy: 0.2277
+Micro-averaged Specificity: 0.8524
+Macro-averaged F-Measure: 0.609
+OneError: 0.3366
+Ranking Loss: 0.2021
+Example-Based Precision: 0.5912
+Example-Based F Measure: 0.5525
+Macro-averaged Recall: 0.5859
+Coverage: 2.0545
+Macro-averaged Specificity: 0.8492
+Iteration time: 31.0
+Mean Average Interpolated Precision: 0.6987
+Micro-averaged Precision: 0.6581
+Micro-averaged Recall: 0.5789
+Geometric Mean Average Precision: 0.6532
+Example-Based Accuracy: 0.4752
+Macro-averaged Precision: 0.651
+Micro-averaged AUC: 0.8171
+Instances selection time: 3.0
+IsError: 0.5743
+Mean Average Precision: 0.6782
+Training time: 28.0
+		
+Iteration: 30
+Labeled set size: 164
+Unlabelled set size: 227
+	
+Geometric Mean Average Interpolated Precision: 0.6837
+Hamming Loss: 0.2343
+Macro-averaged AUC: 0.8019
+Example-Based Specificity: 0.8614
+ErrorSetSize: 1.3861
+Test time: 142.0
+Accumulative iteration time: 915.0
+Example-Based Recall: 0.5767
+Average Precision: 0.7704
+Micro-averaged F-Measure: 0.6203
+Subset Accuracy: 0.2079
+Micro-averaged Specificity: 0.8561
+Macro-averaged F-Measure: 0.6111
+OneError: 0.3317
+Ranking Loss: 0.1921
+Example-Based Precision: 0.611
+Example-Based F Measure: 0.5604
+Macro-averaged Recall: 0.5861
+Coverage: 1.995
+Macro-averaged Specificity: 0.8532
+Iteration time: 40.0
+Mean Average Interpolated Precision: 0.6987
+Micro-averaged Precision: 0.6648
+Micro-averaged Recall: 0.5815
+Geometric Mean Average Precision: 0.6528
+Example-Based Accuracy: 0.4765
+Macro-averaged Precision: 0.6559
+Micro-averaged AUC: 0.8174
+Instances selection time: 5.0
+IsError: 0.5446
+Mean Average Precision: 0.6774
+Training time: 35.0
+		
+Iteration: 31
+Labeled set size: 169
+Unlabelled set size: 222
+	
+Geometric Mean Average Interpolated Precision: 0.6893
+Hamming Loss: 0.2318
+Macro-averaged AUC: 0.8069
+Example-Based Specificity: 0.8623
+ErrorSetSize: 1.3515
+Test time: 127.0
+Accumulative iteration time: 956.0
+Example-Based Recall: 0.5809
+Average Precision: 0.77
+Micro-averaged F-Measure: 0.6258
+Subset Accuracy: 0.2178
+Micro-averaged Specificity: 0.8561
+Macro-averaged F-Measure: 0.6174
+OneError: 0.3416
+Ranking Loss: 0.1884
+Example-Based Precision: 0.6097
+Example-Based F Measure: 0.5623
+Macro-averaged Recall: 0.595
+Coverage: 1.9604
+Macro-averaged Specificity: 0.8527
+Iteration time: 41.0
+Mean Average Interpolated Precision: 0.7025
+Micro-averaged Precision: 0.6676
+Micro-averaged Recall: 0.589
+Geometric Mean Average Precision: 0.6596
+Example-Based Accuracy: 0.481
+Macro-averaged Precision: 0.6582
+Micro-averaged AUC: 0.8235
+Instances selection time: 5.0
+IsError: 0.5495
+Mean Average Precision: 0.6816
+Training time: 36.0
+		
+Iteration: 32
+Labeled set size: 174
+Unlabelled set size: 217
+	
+Geometric Mean Average Interpolated Precision: 0.6955
+Hamming Loss: 0.2343
+Macro-averaged AUC: 0.809
+Example-Based Specificity: 0.8567
+ErrorSetSize: 1.3713
+Test time: 87.0
+Accumulative iteration time: 990.0
+Example-Based Recall: 0.5916
+Average Precision: 0.7747
+Micro-averaged F-Measure: 0.6243
+Subset Accuracy: 0.2079
+Micro-averaged Specificity: 0.8512
+Macro-averaged F-Measure: 0.6143
+OneError: 0.3267
+Ranking Loss: 0.1885
+Example-Based Precision: 0.6007
+Example-Based F Measure: 0.5639
+Macro-averaged Recall: 0.5938
+Coverage: 1.9703
+Macro-averaged Specificity: 0.848
+Iteration time: 34.0
+Mean Average Interpolated Precision: 0.7085
+Micro-averaged Precision: 0.6611
+Micro-averaged Recall: 0.5915
+Geometric Mean Average Precision: 0.6662
+Example-Based Accuracy: 0.4802
+Macro-averaged Precision: 0.6503
+Micro-averaged AUC: 0.8217
+Instances selection time: 3.0
+IsError: 0.5495
+Mean Average Precision: 0.6884
+Training time: 31.0
+		
+Iteration: 33
+Labeled set size: 179
+Unlabelled set size: 212
+	
+Geometric Mean Average Interpolated Precision: 0.6989
+Hamming Loss: 0.2343
+Macro-averaged AUC: 0.8104
+Example-Based Specificity: 0.8577
+ErrorSetSize: 1.3762
+Test time: 133.0
+Accumulative iteration time: 1038.0
+Example-Based Recall: 0.5908
+Average Precision: 0.7758
+Micro-averaged F-Measure: 0.6243
+Subset Accuracy: 0.2228
+Micro-averaged Specificity: 0.8512
+Macro-averaged F-Measure: 0.6116
+OneError: 0.3366
+Ranking Loss: 0.1873
+Example-Based Precision: 0.6085
+Example-Based F Measure: 0.5656
+Macro-averaged Recall: 0.5922
+Coverage: 1.9604
+Macro-averaged Specificity: 0.8476
+Iteration time: 48.0
+Mean Average Interpolated Precision: 0.7129
+Micro-averaged Precision: 0.6611
+Micro-averaged Recall: 0.5915
+Geometric Mean Average Precision: 0.6722
+Example-Based Accuracy: 0.4839
+Macro-averaged Precision: 0.646
+Micro-averaged AUC: 0.8248
+Instances selection time: 5.0
+IsError: 0.5446
+Mean Average Precision: 0.6941
+Training time: 43.0
+		
+Iteration: 34
+Labeled set size: 184
+Unlabelled set size: 207
+	
+Geometric Mean Average Interpolated Precision: 0.6759
+Hamming Loss: 0.2343
+Macro-averaged AUC: 0.8098
+Example-Based Specificity: 0.8508
+ErrorSetSize: 1.3366
+Test time: 97.0
+Accumulative iteration time: 1075.0
+Example-Based Recall: 0.6007
+Average Precision: 0.7773
+Micro-averaged F-Measure: 0.6283
+Subset Accuracy: 0.2178
+Micro-averaged Specificity: 0.8462
+Macro-averaged F-Measure: 0.6196
+OneError: 0.3317
+Ranking Loss: 0.1829
+Example-Based Precision: 0.6023
+Example-Based F Measure: 0.5694
+Macro-averaged Recall: 0.6043
+Coverage: 1.9257
+Macro-averaged Specificity: 0.8432
+Iteration time: 37.0
+Mean Average Interpolated Precision: 0.6976
+Micro-averaged Precision: 0.6575
+Micro-averaged Recall: 0.6015
+Geometric Mean Average Precision: 0.6649
+Example-Based Accuracy: 0.4868
+Macro-averaged Precision: 0.6522
+Micro-averaged AUC: 0.826
+Instances selection time: 3.0
+IsError: 0.5446
+Mean Average Precision: 0.6907
+Training time: 34.0
+		
+Iteration: 35
+Labeled set size: 189
+Unlabelled set size: 202
+	
+Geometric Mean Average Interpolated Precision: 0.6735
+Hamming Loss: 0.231
+Macro-averaged AUC: 0.8081
+Example-Based Specificity: 0.8601
+ErrorSetSize: 1.3515
+Test time: 85.0
+Accumulative iteration time: 1112.0
+Example-Based Recall: 0.5941
+Average Precision: 0.7744
+Micro-averaged F-Measure: 0.6296
+Subset Accuracy: 0.2277
+Micro-averaged Specificity: 0.8536
+Macro-averaged F-Measure: 0.6196
+OneError: 0.3366
+Ranking Loss: 0.1855
+Example-Based Precision: 0.5961
+Example-Based F Measure: 0.5645
+Macro-averaged Recall: 0.6011
+Coverage: 1.9356
+Macro-averaged Specificity: 0.8506
+Iteration time: 37.0
+Mean Average Interpolated Precision: 0.6967
+Micro-averaged Precision: 0.6667
+Micro-averaged Recall: 0.5965
+Geometric Mean Average Precision: 0.6632
+Example-Based Accuracy: 0.4851
+Macro-averaged Precision: 0.6583
+Micro-averaged AUC: 0.8244
+Instances selection time: 3.0
+IsError: 0.5396
+Mean Average Precision: 0.6896
+Training time: 34.0
+		
+Iteration: 36
+Labeled set size: 194
+Unlabelled set size: 197
+	
+Geometric Mean Average Interpolated Precision: 0.6807
+Hamming Loss: 0.2393
+Macro-averaged AUC: 0.8101
+Example-Based Specificity: 0.8491
+ErrorSetSize: 1.3515
+Test time: 87.0
+Accumulative iteration time: 1146.0
+Example-Based Recall: 0.5916
+Average Precision: 0.7694
+Micro-averaged F-Measure: 0.6204
+Subset Accuracy: 0.203
+Micro-averaged Specificity: 0.8426
+Macro-averaged F-Measure: 0.614
+OneError: 0.3515
+Ranking Loss: 0.186
+Example-Based Precision: 0.587
+Example-Based F Measure: 0.5573
+Macro-averaged Recall: 0.6007
+Coverage: 1.9406
+Macro-averaged Specificity: 0.8398
+Iteration time: 34.0
+Mean Average Interpolated Precision: 0.7025
+Micro-averaged Precision: 0.6493
+Micro-averaged Recall: 0.594
+Geometric Mean Average Precision: 0.663
+Example-Based Accuracy: 0.4757
+Macro-averaged Precision: 0.6451
+Micro-averaged AUC: 0.8254
+Instances selection time: 3.0
+IsError: 0.5545
+Mean Average Precision: 0.6902
+Training time: 31.0
+		
+Iteration: 37
+Labeled set size: 199
+Unlabelled set size: 192
+	
+Geometric Mean Average Interpolated Precision: 0.6783
+Hamming Loss: 0.2302
+Macro-averaged AUC: 0.8069
+Example-Based Specificity: 0.856
+ErrorSetSize: 1.3812
+Test time: 87.0
+Accumulative iteration time: 1185.0
+Example-Based Recall: 0.6056
+Average Precision: 0.7658
+Micro-averaged F-Measure: 0.6343
+Subset Accuracy: 0.2376
+Micro-averaged Specificity: 0.8499
+Macro-averaged F-Measure: 0.6234
+OneError: 0.3564
+Ranking Loss: 0.1914
+Example-Based Precision: 0.5895
+Example-Based F Measure: 0.569
+Macro-averaged Recall: 0.6121
+Coverage: 1.9703
+Macro-averaged Specificity: 0.8476
+Iteration time: 39.0
+Mean Average Interpolated Precision: 0.6992
+Micro-averaged Precision: 0.6648
+Micro-averaged Recall: 0.6065
+Geometric Mean Average Precision: 0.661
+Example-Based Accuracy: 0.4917
+Macro-averaged Precision: 0.655
+Micro-averaged AUC: 0.8231
+Instances selection time: 2.0
+IsError: 0.5545
+Mean Average Precision: 0.6871
+Training time: 37.0
+		
+Iteration: 38
+Labeled set size: 204
+Unlabelled set size: 187
+	
+Geometric Mean Average Interpolated Precision: 0.6832
+Hamming Loss: 0.2285
+Macro-averaged AUC: 0.8105
+Example-Based Specificity: 0.8578
+ErrorSetSize: 1.3218
+Test time: 87.0
+Accumulative iteration time: 1225.0
+Example-Based Recall: 0.6064
+Average Precision: 0.7767
+Micro-averaged F-Measure: 0.636
+Subset Accuracy: 0.2327
+Micro-averaged Specificity: 0.8524
+Macro-averaged F-Measure: 0.6281
+OneError: 0.3267
+Ranking Loss: 0.1826
+Example-Based Precision: 0.5949
+Example-Based F Measure: 0.5707
+Macro-averaged Recall: 0.6134
+Coverage: 1.9356
+Macro-averaged Specificity: 0.8498
+Iteration time: 40.0
+Mean Average Interpolated Precision: 0.7029
+Micro-averaged Precision: 0.6685
+Micro-averaged Recall: 0.6065
+Geometric Mean Average Precision: 0.6621
+Example-Based Accuracy: 0.493
+Macro-averaged Precision: 0.6605
+Micro-averaged AUC: 0.825
+Instances selection time: 3.0
+IsError: 0.5446
+Mean Average Precision: 0.6883
+Training time: 37.0
+		
+Iteration: 39
+Labeled set size: 209
+Unlabelled set size: 182
+	
+Geometric Mean Average Interpolated Precision: 0.6807
+Hamming Loss: 0.2285
+Macro-averaged AUC: 0.8102
+Example-Based Specificity: 0.8533
+ErrorSetSize: 1.3762
+Test time: 88.0
+Accumulative iteration time: 1262.0
+Example-Based Recall: 0.6139
+Average Precision: 0.7698
+Micro-averaged F-Measure: 0.6389
+Subset Accuracy: 0.2426
+Micro-averaged Specificity: 0.8487
+Macro-averaged F-Measure: 0.6335
+OneError: 0.3465
+Ranking Loss: 0.1906
+Example-Based Precision: 0.5941
+Example-Based F Measure: 0.5765
+Macro-averaged Recall: 0.6208
+Coverage: 1.9703
+Macro-averaged Specificity: 0.8458
+Iteration time: 37.0
+Mean Average Interpolated Precision: 0.7014
+Micro-averaged Precision: 0.6658
+Micro-averaged Recall: 0.614
+Geometric Mean Average Precision: 0.6613
+Example-Based Accuracy: 0.4996
+Macro-averaged Precision: 0.6613
+Micro-averaged AUC: 0.8242
+Instances selection time: 3.0
+IsError: 0.5396
+Mean Average Precision: 0.6881
+Training time: 34.0
+		
+Iteration: 40
+Labeled set size: 214
+Unlabelled set size: 177
+	
+Geometric Mean Average Interpolated Precision: 0.6822
+Hamming Loss: 0.2302
+Macro-averaged AUC: 0.8091
+Example-Based Specificity: 0.8544
+ErrorSetSize: 1.3218
+Test time: 109.0
+Accumulative iteration time: 1301.0
+Example-Based Recall: 0.604
+Average Precision: 0.7787
+Micro-averaged F-Measure: 0.6343
+Subset Accuracy: 0.2277
+Micro-averaged Specificity: 0.8499
+Macro-averaged F-Measure: 0.6268
+OneError: 0.3267
+Ranking Loss: 0.1818
+Example-Based Precision: 0.5833
+Example-Based F Measure: 0.5662
+Macro-averaged Recall: 0.6123
+Coverage: 1.9257
+Macro-averaged Specificity: 0.8471
+Iteration time: 39.0
+Mean Average Interpolated Precision: 0.7027
+Micro-averaged Precision: 0.6648
+Micro-averaged Recall: 0.6065
+Geometric Mean Average Precision: 0.6578
+Example-Based Accuracy: 0.4876
+Macro-averaged Precision: 0.6576
+Micro-averaged AUC: 0.8248
+Instances selection time: 2.0
+IsError: 0.5396
+Mean Average Precision: 0.6858
+Training time: 37.0
+		
+Iteration: 41
+Labeled set size: 219
+Unlabelled set size: 172
+	
+Geometric Mean Average Interpolated Precision: 0.6781
+Hamming Loss: 0.2228
+Macro-averaged AUC: 0.8117
+Example-Based Specificity: 0.8676
+ErrorSetSize: 1.3515
+Test time: 112.0
+Accumulative iteration time: 1354.0
+Example-Based Recall: 0.6048
+Average Precision: 0.7729
+Micro-averaged F-Measure: 0.641
+Subset Accuracy: 0.2178
+Micro-averaged Specificity: 0.8622
+Macro-averaged F-Measure: 0.6361
+OneError: 0.3267
+Ranking Loss: 0.1868
+Example-Based Precision: 0.6176
+Example-Based F Measure: 0.5773
+Macro-averaged Recall: 0.6088
+Coverage: 1.9703
+Macro-averaged Specificity: 0.8587
+Iteration time: 53.0
+Mean Average Interpolated Precision: 0.6992
+Micro-averaged Precision: 0.6827
+Micro-averaged Recall: 0.604
+Geometric Mean Average Precision: 0.6646
+Example-Based Accuracy: 0.4938
+Macro-averaged Precision: 0.6795
+Micro-averaged AUC: 0.8262
+Instances selection time: 4.0
+IsError: 0.5644
+Mean Average Precision: 0.6909
+Training time: 49.0
+		
+Iteration: 42
+Labeled set size: 224
+Unlabelled set size: 167
+	
+Geometric Mean Average Interpolated Precision: 0.6731
+Hamming Loss: 0.2327
+Macro-averaged AUC: 0.806
+Example-Based Specificity: 0.8673
+ErrorSetSize: 1.4257
+Test time: 89.0
+Accumulative iteration time: 1400.0
+Example-Based Recall: 0.5767
+Average Precision: 0.7564
+Micro-averaged F-Measure: 0.6189
+Subset Accuracy: 0.2178
+Micro-averaged Specificity: 0.8622
+Macro-averaged F-Measure: 0.6129
+OneError: 0.3614
+Ranking Loss: 0.1963
+Example-Based Precision: 0.5908
+Example-Based F Measure: 0.554
+Macro-averaged Recall: 0.576
+Coverage: 2.0149
+Macro-averaged Specificity: 0.8585
+Iteration time: 46.0
+Mean Average Interpolated Precision: 0.6953
+Micro-averaged Precision: 0.6716
+Micro-averaged Recall: 0.5739
+Geometric Mean Average Precision: 0.6573
+Example-Based Accuracy: 0.474
+Macro-averaged Precision: 0.6665
+Micro-averaged AUC: 0.8218
+Instances selection time: 2.0
+IsError: 0.604
+Mean Average Precision: 0.6854
+Training time: 44.0
+		
+Iteration: 43
+Labeled set size: 229
+Unlabelled set size: 162
+	
+Geometric Mean Average Interpolated Precision: 0.6758
+Hamming Loss: 0.231
+Macro-averaged AUC: 0.8073
+Example-Based Specificity: 0.8687
+ErrorSetSize: 1.4257
+Test time: 86.0
+Accumulative iteration time: 1436.0
+Example-Based Recall: 0.5784
+Average Precision: 0.7627
+Micro-averaged F-Measure: 0.6216
+Subset Accuracy: 0.2277
+Micro-averaged Specificity: 0.8635
+Macro-averaged F-Measure: 0.6146
+OneError: 0.3416
+Ranking Loss: 0.1964
+Example-Based Precision: 0.5957
+Example-Based F Measure: 0.5577
+Macro-averaged Recall: 0.5789
+Coverage: 2.0198
+Macro-averaged Specificity: 0.8598
+Iteration time: 36.0
+Mean Average Interpolated Precision: 0.6971
+Micro-averaged Precision: 0.6745
+Micro-averaged Recall: 0.5764
+Geometric Mean Average Precision: 0.6583
+Example-Based Accuracy: 0.4802
+Macro-averaged Precision: 0.6685
+Micro-averaged AUC: 0.8214
+Instances selection time: 2.0
+IsError: 0.5891
+Mean Average Precision: 0.6863
+Training time: 34.0
+		
+Iteration: 44
+Labeled set size: 234
+Unlabelled set size: 157
+	
+Geometric Mean Average Interpolated Precision: 0.6729
+Hamming Loss: 0.2277
+Macro-averaged AUC: 0.8074
+Example-Based Specificity: 0.8719
+ErrorSetSize: 1.4109
+Test time: 87.0
+Accumulative iteration time: 1476.0
+Example-Based Recall: 0.5809
+Average Precision: 0.7652
+Micro-averaged F-Measure: 0.626
+Subset Accuracy: 0.2327
+Micro-averaged Specificity: 0.8672
+Macro-averaged F-Measure: 0.6201
+OneError: 0.3465
+Ranking Loss: 0.1939
+Example-Based Precision: 0.604
+Example-Based F Measure: 0.5628
+Macro-averaged Recall: 0.5804
+Coverage: 2.005
+Macro-averaged Specificity: 0.8631
+Iteration time: 40.0
+Mean Average Interpolated Precision: 0.6942
+Micro-averaged Precision: 0.6814
+Micro-averaged Recall: 0.5789
+Geometric Mean Average Precision: 0.6537
+Example-Based Accuracy: 0.4843
+Macro-averaged Precision: 0.6765
+Micro-averaged AUC: 0.821
+Instances selection time: 2.0
+IsError: 0.5743
+Mean Average Precision: 0.6816
+Training time: 38.0
+		
+Iteration: 45
+Labeled set size: 239
+Unlabelled set size: 152
+	
+Geometric Mean Average Interpolated Precision: 0.6756
+Hamming Loss: 0.2285
+Macro-averaged AUC: 0.809
+Example-Based Specificity: 0.8672
+ErrorSetSize: 1.4455
+Test time: 88.0
+Accumulative iteration time: 1514.0
+Example-Based Recall: 0.5866
+Average Precision: 0.7627
+Micro-averaged F-Measure: 0.6282
+Subset Accuracy: 0.2228
+Micro-averaged Specificity: 0.8622
+Macro-averaged F-Measure: 0.6217
+OneError: 0.3564
+Ranking Loss: 0.1981
+Example-Based Precision: 0.5924
+Example-Based F Measure: 0.5605
+Macro-averaged Recall: 0.5899
+Coverage: 2.005
+Macro-averaged Specificity: 0.8583
+Iteration time: 38.0
+Mean Average Interpolated Precision: 0.6962
+Micro-averaged Precision: 0.6763
+Micro-averaged Recall: 0.5865
+Geometric Mean Average Precision: 0.6589
+Example-Based Accuracy: 0.4818
+Macro-averaged Precision: 0.6713
+Micro-averaged AUC: 0.8224
+Instances selection time: 2.0
+IsError: 0.5644
+Mean Average Precision: 0.6857
+Training time: 36.0
+		
+Time end:Mon Feb 01 13.37.11 CET 2016

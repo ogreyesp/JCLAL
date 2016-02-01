@@ -1,0 +1,4 @@
+net/sf/jclal/evaluation/method/RunExperimentSingleLabelTest.class
+net/sf/jclal/evaluation/classifier/ParallelizedClassifier.class
+net/sf/jclal/evaluation/method/RunExperimentMultiLabelTest.class
+net/sf/jclal/evaluation/classifier/ParallelizedClassifier$1.class

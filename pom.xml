@@ -1,0 +1,247 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.sf.jclal</groupId>
+	<artifactId>jclal</artifactId>
+	<version>1.1</version>
+	<name>JCLAL framework</name>
+	<packaging>jar</packaging>
+	<description>JCLAL is a software system for Active Learning research, developed in the Java programming language. It provides a high-level software framework and a robust object-oriented design that allows an easy use, extention, modification and reusability. It includes the most relevant query strategies proposed on the single-label and multi-label learning contexts.</description>
+	<url>http://jclal.sf.net</url>
+	<licenses>
+		<license>
+			<name>GNU General Public License 3</name>
+			<url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>oscar</id>
+			<name>Oscar Gabriel Reyes Pupo</name>
+		</developer>
+		<developer>
+			<id>eduardo</id>
+			<name>Eduardo Perez Verdecia</name>
+		</developer>
+		<developer>
+			<id>sebastian</id>
+			<name>Sebastian Ventura</name>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>libs</id>
+			<url>file://${project.basedir}/libs</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils-core</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-digester</groupId>
+			<artifactId>commons-digester</artifactId>
+			<version>1.8</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.epsgraphics</groupId>
+			<artifactId>epsgraphics</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-core</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.princeton.cup</groupId>
+			<artifactId>java-cup</artifactId>
+			<version>10k</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jfree</groupId>
+			<artifactId>jcommon</artifactId>
+			<version>1.0.23</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+			<version>1.0.19</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jfree</groupId>
+			<artifactId>jfreesvg</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-core</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.5.0-b01</version>
+		</dependency>
+		<dependency>
+			<groupId>nz.ac.waikato.cms.moa</groupId>
+			<artifactId>moa</artifactId>
+			<version>2014.04</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.meka.thirdparty</groupId>
+			<artifactId>mulan</artifactId>
+			<version>1.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>nz.ac.waikato.cms.weka</groupId>
+			<artifactId>multiInstanceFilters</artifactId>
+			<version>1.0.5</version>
+		</dependency>
+		<dependency>
+			<groupId>nz.ac.waikato.cms.weka</groupId>
+			<artifactId>multiInstanceLearning</artifactId>
+			<version>1.0.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho.pentaho-commons</groupId>
+			<artifactId>pentaho-package-manager</artifactId>
+			<version>1.0.8</version>
+		</dependency>
+		<dependency>
+			<groupId>nz.ac.waikato.cms.weka</groupId>
+			<artifactId>weka-dev</artifactId>
+			<version>3.7.10</version>
+		</dependency>
+	</dependencies>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
+
+			<!--Run "mvn package" if you want to compile the project and its dependencies 
+				into one jar file" -->
+			<!-- <plugin> <artifactId>maven-assembly-plugin</artifactId> <version>2.4</version> 
+				<executions> <execution> <phase>package</phase> <goals><goal>single</goal></goals> 
+				</execution> </executions> <configuration> <descriptorRefs><descriptorRef>jar-with-dependencies</descriptorRef></descriptorRefs> 
+				<appendAssemblyId>false</appendAssemblyId> <finalName>jclal</finalName> <outputDirectory>${project.basedir}</outputDirectory> 
+				<archive> <manifest><mainClass>net.sf.jclal.experiment.RunExperiment</mainClass></manifest> 
+				</archive> </configuration> </plugin> -->
+
+			<!--Run "mvn install" if you want to compile the project into one jar 
+				file and copy its dependencies into the libs folder" -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>libs/</classpathPrefix>
+							<mainClass>net.sf.jclal.experiment.RunExperiment</mainClass>
+						</manifest>
+					</archive>
+					<outputDirectory>${project.basedir}</outputDirectory>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.basedir}/libs</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+	<organization>
+		<name>University of Holguín, Cuba- University of Cordoba, Spain</name>
+		<url>http://www.uho.edu.cu, http://www.uco.es</url>
+	</organization>
+</project>

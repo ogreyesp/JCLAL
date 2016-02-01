@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="libs/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="libs/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="libs/commons-beanutils-core-1.7.0.jar"/>
+	<classpathentry kind="lib" path="libs/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="libs/commons-configuration-1.5.jar"/>
+	<classpathentry kind="lib" path="libs/commons-digester-1.8.jar"/>
+	<classpathentry kind="lib" path="libs/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="libs/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="libs/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="libs/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="libs/lucene-core-2.4.0.jar"/>
+	<classpathentry kind="lib" path="libs/mail-1.5.0-b01.jar"/>
+	<classpathentry kind="lib" path="libs/mulan-1.4.0.jar"/>
+	<classpathentry kind="lib" path="libs/pentaho-package-manager-1.0.8.jar"/>
+	<classpathentry kind="lib" path="libs/weka-dev-3.7.10.jar"/>
+	<classpathentry kind="lib" path="libs/multiInstanceFilters-1.0.5.jar"/>
+	<classpathentry kind="lib" path="libs/multiInstanceLearning-1.0.7.jar"/>
+	<classpathentry kind="lib" path="libs/jfreesvg-3.0.jar"/>
+	<classpathentry kind="lib" path="libs/epsgraphics-1.2.jar"/>
+	<classpathentry kind="lib" path="libs/java-cup-10k.jar"/>
+	<classpathentry kind="lib" path="libs/moa-2014.04.jar"/>
+	<classpathentry kind="output" path="target/src-classes"/>
+</classpath>

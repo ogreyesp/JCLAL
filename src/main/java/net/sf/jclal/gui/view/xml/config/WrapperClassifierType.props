@@ -1,0 +1,4 @@
+WrapperClassifierType
+net.sf.jclal.classifier.MulanClassifier
+net.sf.jclal.classifier.WekaClassifier
+net.sf.jclal.classifier.WekaComitteClassifier
