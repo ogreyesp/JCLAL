@@ -1,5 +1,5 @@
 =====================================================================
-                                                                     
+![Logo](https://github.com/ogreyesp/JCLAL/blob/master/icon.png)                                                                   
 	                         JCLAL
                             7 November 2014
                                                                        
