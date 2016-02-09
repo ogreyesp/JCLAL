@@ -1,0 +1,51 @@
+JCLAL 1.1
+
+Features added
+*******************
+
+- Some evaluation measures were included for further analysis, e.g. the time for selecting the unlabeled instances, the time for training and testing  the base classifier…
+
+- It is possible to show by console the labels of the queried instances in a SimulatedOracle.
+
+- It is possible to retrieve the last instances that were labeled by an oracle.
+
+- The ConsoleHumanOracle class was improved. The human annotator can skip a query instance.
+
+- Supports for incremental classifiers. If the base classifier is updatable then the base classifier is not retrained with all labeled instances from scratch in every iteration.
+
+- An abstract method was added to the IqueryStrategy interface for executing any necessary action after the active learning process is finished, e.g. free memory, delete temporal files, etc.
+
+- Supports for CLUS and LibSVM multilabel datasets.
+
+- The 5X2 cross validation was added.
+
+- The Leave One Out cross validation was added.
+
+- We have included a real-usage scenario, where the user provides a small labeled set from which the initial classifier is trained, and an unlabeled set for determining the unlabeled instances that should be query in each iteration. In each iteration, the unlabeled instances selected are showed to the user, the user labels the instances and they are added to labeled set.  This real-usage scenario allows to obtain the set of labeled instances at the end of the session for further analysis.
+
+-Several new features were added to the ExternalBasicChart class, e.g. curve options, view dash types, view shapes, export the graphics in EPS and SVG formats.
+
+- The KnearestDistanceContainer class was added. It extends DistanceContainer class and allows to store the distance between an instance and its k-nearest neighbours.
+
+- Several features were added to the LearningCurveUtility, e.g. creation of CSV files with AULC's values from directory of reports for further analysis.
+
+- We have incorporated a new package net.sf.jclal.gui.view.components.statistical for performing statistical tests. The StatisticalWindow class is a user-friendly GUI that allows to perform the most popular non parametric statistical tests. The code was adopted from KEEL software (http://www.keel.es).
+
+- The BinaryRelevanceUpdateable was added. It allows to execute the Binary Relevance approach with incremental classifiers as binary classifiers.
+
+- The LCI and MMU multi-label strategies were added. (Li, X., & Guo, Y. 2013. Active Learning with Multi-label SVM Classification.)
+
+-Supports for incremental classifiers of MOA library.
+
+
+Features deleted
+*********************
+
+The package net.sf.jclal.gui.view.xml was removed from this version. The GUI for configuring the experiments (GUIXML) only works with JCLAL-1.0 version. We are working in a more user-friendly GUI for configuring the experiments. For this same reason, the plugin for working into Weka's explorer only works with JCLAL-1.0 version.
+
+Bugs fixed
+*************
+
+- Bug at the time to show several curves which have different metrics. (ExternalBasicChart class)
+
+- Bug in kfoldCrossValidation in the aggregation step of the fold's results. The error was only in the summary data, e.g. the size of the initial unlabeled set and the size of the initial labeled set. (kFoldCrossValidation class)
