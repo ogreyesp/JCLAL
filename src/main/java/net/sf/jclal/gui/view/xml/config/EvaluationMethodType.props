@@ -1,3 +1,0 @@
-EvaluationMethodType
-net.sf.jclal.evaluation.method.HoldOut
-net.sf.jclal.evaluation.method.kFoldCrossValidation

@@ -59,7 +59,7 @@ public class RunExperiment {
 	 *            Number of experiments executing in parallel.
 	 *            </p>
 	 *            <p>
-	 *            [optional] -cores-peer-processors [int] or [all]. Default
+	 *            [optional] -cores-per-processor [int] or [all]. Default
 	 *            value is 1. Number of cores used in every experiment.
 	 *            </p>
 	 *            <p>
@@ -77,7 +77,7 @@ public class RunExperiment {
 			System.out.println("Usage:" + USAGE_MES);
 			System.out.println("These are the possible arguments:"
 					+ "\n [optional] -processors [int] or [all] to use all the possible processors. The default value is 1"
-					+ "\n [optional] -cores-peer-processors [int] or [all] to use all the possible processors. Default value is 1. Numer of cores used in every experiment."
+					+ "\n [optional] -cores-per-processor [int] or [all] to use all the possible processors. Default value is 1. Numer of cores used in every experiment."
 					+ "\n -cfg \"[list of configuration files]\": List of the configuration files. The name of each configuration file must be followed by a semicolon (;), except the last"
 					+ "\n -d \"[A directory that constains a set of experiment files. This option can be used to execute a battery of experiments]\"");
 			System.exit(1);
@@ -134,8 +134,8 @@ public class RunExperiment {
 			}
 		}
 
-		String cores = Utils.getOption("cores-peer-processors", args);
-		System.setProperty("cores-peer-processors", cores);
+		String cores = Utils.getOption("cores-per-processor", args);
+		System.setProperty("cores-per-processor", cores);
 
 		String cfg = Utils.getOption("cfg", args);
 		if (!cfg.isEmpty()) {

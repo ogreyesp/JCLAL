@@ -64,7 +64,7 @@ public class MultiLabelMaxLossQueryStrategy extends AbstractMultiLabelQueryStrat
 
 			BinaryRelevance learner = (BinaryRelevance) ((MulanClassifier) getClassifier()).getInternalClassifier();
 
-			// One SVM classiier for each label
+			// One SVM classifier for each label
 			Classifier[] smos = learner.getEnsemble();
 
 			if (!(smos[0] instanceof SMOsync)) {
@@ -76,7 +76,9 @@ public class MultiLabelMaxLossQueryStrategy extends AbstractMultiLabelQueryStrat
 
 			int sum = 0;
 
-			int maxConfidenceClass = Utils.maxIndex(learner.makePrediction(instance).getConfidences());
+			int maxConfidenceClass;
+
+			maxConfidenceClass = Utils.maxIndex(learner.makePrediction(instance).getConfidences());
 
 			for (int l = 0; l < getNumLabels(); l++) {
 

@@ -1,6 +1,4 @@
 /*
- * Copyright (C) 2015 epp
- *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -147,4 +145,25 @@ public class ThreadControl {
 		this.defaultCores = defaultCores;
 	}
 
+    /**
+     * Takes like default system property "cores-per-processor".
+     *
+     * @param isParallelContext
+     * @return
+     */
+    public static ThreadControl defaultThreadControl(boolean isParallelContext) {
+        return defaultThreadControl(isParallelContext, "cores-per-processor");
+}
+
+    /**
+     *
+     * @param isParallelContext
+     * @return
+     */
+    public static ThreadControl defaultThreadControl(boolean isParallelContext,
+            String systemProperty) {
+
+        return isParallelContext
+                ? new ThreadControl(systemProperty) : new ThreadControl(1);
+    }
 }

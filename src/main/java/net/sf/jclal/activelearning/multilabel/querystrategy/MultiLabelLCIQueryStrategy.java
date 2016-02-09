@@ -50,8 +50,9 @@ public class MultiLabelLCIQueryStrategy extends AbstractMultiLabelQueryStrategy 
 	public double utilityInstance(Instance instance) {
 
 		// Predict the label set
-		boolean[] categoryVector = ((MulanClassifier) getClassifier()).getBipartition(instance);
+		boolean[] categoryVector;
 
+		categoryVector = ((MulanClassifier) getClassifier()).getBipartition(instance);
 		// Count the nuber of true labels
 
 		int positiveLabels = 0;

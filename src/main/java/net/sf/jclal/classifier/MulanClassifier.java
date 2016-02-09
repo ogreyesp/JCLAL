@@ -20,6 +20,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import mulan.classifier.MultiLabelLearnerBase;
+import mulan.classifier.MultiLabelOutput;
 import mulan.classifier.transformation.TransformationBasedMultiLabelLearner;
 import mulan.data.InvalidDataFormatException;
 import mulan.evaluation.Evaluator;
@@ -85,6 +86,7 @@ public class MulanClassifier extends AbstractClassifier {
 
 		try {
 			return classifier.makePrediction(instance).getConfidences();
+
 		} catch (Exception e) {
 			Logger.getLogger(MulanClassifier.class.getName()).log(Level.SEVERE, null, e);
 		}
@@ -110,6 +112,24 @@ public class MulanClassifier extends AbstractClassifier {
 	}
 
 	/**
+	 * Return a MultiLabelOutput object
+	 *
+	 * @param instance
+	 *            The instance to test
+	 * @return a MultiLabelOutput object
+	 */
+	public MultiLabelOutput makePrediction(Instance instance) {
+
+		try {
+			return classifier.makePrediction(instance);
+		} catch (Exception e) {
+
+			Logger.getLogger(MulanClassifier.class.getName()).log(Level.SEVERE, null, e);
+		}
+		return null;
+	}
+
+	/**
 	 * Return a ranking of labels according their relevance
 	 *
 	 * @param instance
@@ -120,6 +140,7 @@ public class MulanClassifier extends AbstractClassifier {
 
 		try {
 			return classifier.makePrediction(instance).getRanking();
+
 		} catch (Exception e) {
 
 			Logger.getLogger(MulanClassifier.class.getName()).log(Level.SEVERE, null, e);

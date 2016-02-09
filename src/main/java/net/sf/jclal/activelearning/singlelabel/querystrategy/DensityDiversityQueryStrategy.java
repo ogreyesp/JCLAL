@@ -237,6 +237,7 @@ public class DensityDiversityQueryStrategy extends AbstractSingleLabelQueryStrat
 		 * distance among the instances of the unlabeled set are calculated
 		 */
 		Instances unlabelled = subQueryStrategy.getUnlabelledData().getDataset();
+		
 		if (distanceValues == null) {
 			typeOfDistance.setInstances(unlabelled);
 			try {
@@ -276,17 +277,6 @@ public class DensityDiversityQueryStrategy extends AbstractSingleLabelQueryStrat
 			// To convert the value
 			step1 = 1 / step1;
 
-		}
-
-		// the distance among the instances of the
-		// unlabeled set are calculated
-		if (distanceValues == null) {
-			typeOfDistance.setInstances(unlabelled);
-			try {
-				distanceValues = new DistanceContainer(unlabelled, typeOfDistance, matrixOverFile);
-			} catch (Exception ex) {
-				Logger.getLogger(DensityDiversityQueryStrategy.class.getName()).log(Level.SEVERE, null, ex);
-			}
 		}
 
 		// Step 2

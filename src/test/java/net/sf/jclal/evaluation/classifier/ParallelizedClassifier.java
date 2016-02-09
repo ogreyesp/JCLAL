@@ -72,7 +72,7 @@ public class ParallelizedClassifier {
 	 */
 	@Test
 	public void testClassifier() throws Exception {
-		System.setProperty("cores-peer-processors", "all");
+		System.setProperty("cores-per-processor", "all");
 
 		int folds = 10;
 		Classifier c = new SMOsync();

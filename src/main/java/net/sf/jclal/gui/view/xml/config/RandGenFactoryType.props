@@ -1,6 +1,0 @@
-RandGenFactoryType
-net.sf.jclal.util.random.JavaRandomFactory
-net.sf.jclal.util.random.RanecuFactory
-net.sf.jclal.util.random.RanluxFactory
-net.sf.jclal.util.random.RanmarFactory
-net.sf.jclal.util.random.RanmtFactory

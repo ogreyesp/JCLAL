@@ -1,4 +1,0 @@
-DistanceFunctionType
-net.sf.jclal.util.distancefunction.ClassicalHammingDistance
-net.sf.jclal.util.distancefunction.CosineDistance
-net.sf.jclal.util.distancefunction.EntropicDistance

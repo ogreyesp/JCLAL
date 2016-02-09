@@ -15,9 +15,9 @@
  */
 package net.sf.jclal.activelearning.singlelabel.querystrategy;
 
-import net.sf.jclal.core.IRandGen;
 import net.sf.jclal.core.ISystem;
 import net.sf.jclal.core.ITool;
+import net.sf.jclal.core.IRandGen;
 import weka.core.Instance;
 
 /**
@@ -32,36 +32,55 @@ import weka.core.Instance;
  */
 public class RandomSelectionQueryStrategy extends AbstractSingleLabelQueryStrategy implements ITool {
 
-	private static final long serialVersionUID = 4341080288965932110L;
+    private static final long serialVersionUID = 4341080288965932110L;
 
-	/**
-	 * The random numbers generator.
-	 */
-	private IRandGen random;
+    /**
+     * The random numbers generator.
+     */
+    private IRandGen random;
 
-	/**
-	 * Empty (default) constructor.
-	 */
-	public RandomSelectionQueryStrategy() {
-	}
+    /**
+     * Stores the random values, is needed when is used a parallel context to
+     * access in the 'IRandGen'
+     */
+    private double[] randV;
 
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public double utilityInstance(Instance instance) {
+    /**
+     * Empty (default) constructor.
+     */
+    public RandomSelectionQueryStrategy() {
+    }
 
-		return random.raw();
-	}
+    @Override
+    public double[] testUnlabeledData() {
+        randV = new double[getUnlabelledData().getNumInstances()];
+        for (int i = 0; i < randV.length; i++) {
+            randV[i] = random.raw();
+        }
 
-	/**
-	 * Contextualize the random generator.
-	 *
-	 * @param context
-	 *            The context to use.
-	 */
-	@Override
-	public void contextualize(ISystem context) {
-		random = context.createRandGen();
-	}
+        return super.testUnlabeledData();
+    }
+
+    /**
+     * Returns any instance according to the generator.
+     *
+     * @param instance The instance to query.
+     * @return The utility of the instance.
+     */
+    @Override
+    public double utilityInstance(Instance instance) {
+
+        return randV[getUnlabelledData().getDataset().indexOf(instance)];
+
+    }
+
+    /**
+     * Contextualize the random generator.
+     *
+     * @param context The context to use.
+     */
+    @Override
+    public void contextualize(ISystem context) {
+        random = context.createRandGen();
+    }
 }

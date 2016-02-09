@@ -244,8 +244,10 @@ public class MultiLabelMMCQueryStrategy extends AbstractMultiLabelQueryStrategy 
 
 			newInstance.setDataset(newDataset);
 
+			double classes;
+
 			// To classify the converted instance according to LR-based method
-			double classes = logistic.classifyInstance(newInstance);
+			classes = logistic.classifyInstance(newInstance);
 
 			double score = 0;
 

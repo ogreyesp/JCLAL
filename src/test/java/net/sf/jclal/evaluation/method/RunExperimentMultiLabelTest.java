@@ -49,7 +49,7 @@ public class RunExperimentMultiLabelTest {
 
 	@After
 	public void tearDown() {
-	}
+	}	
 
 	/**
 	 * Test of evaluate method, of class HoldOut.
@@ -59,7 +59,7 @@ public class RunExperimentMultiLabelTest {
 
 		System.out.println("evaluate");
 
-		String args[] = new String[] { "-d", "examples/MultiLabel" };
+		String args[] = new String[] { "-d", "examples/MultiLabel"};
 
 		try {
 			RunExperiment.main(args);
@@ -67,5 +67,4 @@ public class RunExperimentMultiLabelTest {
 			Logger.getLogger(RunExperimentSingleLabelTest.class.getName()).log(Level.SEVERE, null, e);
 		}
 	}
-
 }

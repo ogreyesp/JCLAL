@@ -38,16 +38,13 @@ public class MaxIteration implements IStopCriterion, IConfigure {
 	private int maxIteration = 50;
 
 	@Override
-	public boolean stop(IAlgorithm algorithm) {
+    public boolean stop(IAlgorithm algorithm) {
+            // If maximum number of iterations is exceeded, the algorithm is
+            // finished
 
-		// If maximum number of iterations is exceeded, the algorithm is
-		// finished
-		if (((ClassicalALAlgorithm) algorithm).getIteration() >= maxIteration) {
-			return true;
-		}
 
-		return false;
-	}
+        return ((ClassicalALAlgorithm) algorithm).getIteration() >= maxIteration;
+    }
 
 	/**
 	 * @param settings

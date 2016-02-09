@@ -17,7 +17,6 @@ package net.sf.jclal.classifier;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import net.sf.jclal.activelearning.singlelabel.querystrategy.VoteEntropyQueryStrategy;
 import net.sf.jclal.core.IConfigure;
 import net.sf.jclal.core.IDataset;
 import net.sf.jclal.evaluation.measure.AbstractEvaluation;
@@ -62,7 +61,7 @@ public class WekaComitteClassifier extends AbstractClassifier {
 	@Override
 	public void buildClassifier(final IDataset instances) throws Exception {
 
-		ThreadControl thread = isParallel() ? new ThreadControl("cores-peer-processors") : new ThreadControl(1);
+		ThreadControl thread = ThreadControl.defaultThreadControl(isParallel());
 
 		for (final Classifier classifier : classifiers) {
 
@@ -156,7 +155,7 @@ public class WekaComitteClassifier extends AbstractClassifier {
 
 		} catch (Exception ex) {
 
-			Logger.getLogger(VoteEntropyQueryStrategy.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(WekaComitteClassifier.class.getName()).log(Level.SEVERE, null, ex);
 		}
 
 		return null;
@@ -178,7 +177,7 @@ public class WekaComitteClassifier extends AbstractClassifier {
 
 			final double[][] evaluations = new double[testData.numInstances()][];
 
-			ThreadControl thread = isParallel() ? new ThreadControl("cores-peer-processors") : new ThreadControl(1);
+			ThreadControl thread = ThreadControl.defaultThreadControl(isParallel());
 
 			for (int i = 0; i < evaluations.length; i++) {
 

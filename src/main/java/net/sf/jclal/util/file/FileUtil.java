@@ -505,7 +505,7 @@ public class FileUtil {
 
 			String line;
 			while ((line = read.readLine()) != null) {
-				if (line.contains("Iteration:")) {
+				if (line.contains("Query strategy:")) {
 					c = true;
 					break;
 				}

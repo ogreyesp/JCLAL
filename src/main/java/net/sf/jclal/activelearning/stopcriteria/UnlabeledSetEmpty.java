@@ -37,11 +37,8 @@ public class UnlabeledSetEmpty implements IStopCriterion, Serializable {
 	@Override
 	public boolean stop(IAlgorithm algorithm) {
 
-		if (((AbstractQueryStrategy) ((ClassicalALAlgorithm) algorithm).getScenario().getQueryStrategy())
-				.getUnlabelledData().isEmpty()) {
-			return true;
-		}
-
-		return false;
+		return ((AbstractQueryStrategy) ((ClassicalALAlgorithm) algorithm).getScenario().getQueryStrategy())
+				.getUnlabelledData().isEmpty();
 	}
+
 }

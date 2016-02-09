@@ -19,7 +19,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import mulan.classifier.InvalidDataException;
 import mulan.classifier.ModelInitializationException;
-import mulan.classifier.MultiLabelLearnerBase;
 import mulan.classifier.MultiLabelOutput;
 import net.sf.jclal.classifier.MulanClassifier;
 import net.sf.jclal.core.IConfigure;
@@ -85,8 +84,6 @@ public class MultiLabel3DimensionalQueryStrategy extends AbstractMultiLabelQuery
 	 */
 	private char weightDimension;
 
-	private MultiLabelLearnerBase classifier;
-
 	/**
 	 * Empty constructor
 	 */
@@ -108,10 +105,9 @@ public class MultiLabel3DimensionalQueryStrategy extends AbstractMultiLabelQuery
 
 		try {
 
-			classifier = ((MulanClassifier) getClassifier()).getInternalClassifier();
+			MultiLabelOutput mloutput = ((MulanClassifier) getClassifier()).makePrediction(instance);
 
 			// Evidence dimension
-			MultiLabelOutput mloutput = classifier.makePrediction(instance);
 
 			double[] confidences = mloutput.getConfidences();
 			boolean[] bipartition = mloutput.getBipartition();

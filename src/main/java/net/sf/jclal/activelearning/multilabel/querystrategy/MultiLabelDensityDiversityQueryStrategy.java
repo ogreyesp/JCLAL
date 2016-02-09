@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import mulan.data.LabelsMetaData;
+import net.sf.jclal.activelearning.singlelabel.querystrategy.DensityDiversityQueryStrategy;
 import net.sf.jclal.core.IClassifier;
 import net.sf.jclal.core.IConfigure;
 import net.sf.jclal.core.IDataset;
@@ -253,30 +254,12 @@ public class MultiLabelDensityDiversityQueryStrategy extends AbstractMultiLabelQ
 	 * {@inheritDoc}
 	 */
 	@Override
-	public double utilityInstance(Instance instance) {
-
+	public double[] testUnlabeledData() {
+		/**
+		 * Compute the distance just once. The distance among the instances of
+		 * the unlabeled set are calculated
+		 */
 		Instances unlabelled = subQueryStrategy.getUnlabelledData().getDataset();
-
-		int sizeUnlabeledData = unlabelled.numInstances();
-
-		// Step1
-		double step1;
-
-		// standard values
-		step1 = subQueryStrategy.utilityInstance(instance);
-
-		// If the utility is equal to 0 then the rest of the process is
-		// unnecessary
-		if (step1 == 0) {
-			return 0;
-		}
-
-		if (subQueryStrategy.isMaximal()) {
-
-			// To convert the value
-			step1 = 1 / step1;
-
-		}
 
 		if (labelIndicesString == null) {
 			// label attributes don't influence distance estimation
@@ -301,6 +284,38 @@ public class MultiLabelDensityDiversityQueryStrategy extends AbstractMultiLabelQ
 			} catch (Exception ex) {
 				Logger.getLogger(MultiLabelDensityDiversityQueryStrategy.class.getName()).log(Level.SEVERE, null, ex);
 			}
+		}
+
+		return super.testUnlabeledData();
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public double utilityInstance(Instance instance) {
+
+		Instances unlabelled = subQueryStrategy.getUnlabelledData().getDataset();
+
+		int sizeUnlabeledData = unlabelled.numInstances();
+
+		// Step1
+		double step1;
+
+		step1 = subQueryStrategy.utilityInstance(instance);
+		// standard values
+
+		// If the utility is equal to 0 then the rest of the process is
+		// unnecessary
+		if (step1 == 0) {
+			return 0;
+		}
+
+		if (subQueryStrategy.isMaximal()) {
+
+			// To convert the value
+			step1 = 1 / step1;
+
 		}
 
 		// Step 2

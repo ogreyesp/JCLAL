@@ -205,4 +205,24 @@ public class AbstractEvaluation implements IEvaluation {
 
 		return st.toString();
 	}
+
+	/**
+	 * Compare two AbstractEvaluation objects
+	 *
+	 * @param obj
+	 *            An object that inherits from AbstractEvaluation.
+	 * @return If the evaluation values are identical.
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		AbstractEvaluation x = (AbstractEvaluation) obj;
+
+		String[] keys = getMetricNames();
+		for (String key : keys) {
+			if (getMetricValue(key) != x.getMetricValue(key)) {
+				return false;
+			}
+		}
+		return true;
+	}
 }

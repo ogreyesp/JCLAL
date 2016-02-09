@@ -1,4 +1,0 @@
-SamplingMethodType
-net.sf.jclal.sampling.supervised.MultiLabelResample
-net.sf.jclal.sampling.supervised.Resample;Supervised-Resample
-net.sf.jclal.sampling.unsupervised.Resample;Unsupervised-Resample

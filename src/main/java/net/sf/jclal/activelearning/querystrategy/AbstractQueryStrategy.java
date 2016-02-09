@@ -20,7 +20,6 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import net.sf.jclal.activelearning.scenario.PoolBasedSamplingScenario;
 import net.sf.jclal.classifier.MOAClassifier;
 import net.sf.jclal.classifier.MulanClassifier;
 import net.sf.jclal.classifier.WekaClassifier;
@@ -308,7 +307,7 @@ public abstract class AbstractQueryStrategy implements IQueryStrategy, IConfigur
 			firstTime = false;
 
 		} catch (Exception ex) {
-			Logger.getLogger(PoolBasedSamplingScenario.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(AbstractQueryStrategy.class.getName()).log(Level.SEVERE, null, ex);
 		}
 
 	}
@@ -349,7 +348,7 @@ public abstract class AbstractQueryStrategy implements IQueryStrategy, IConfigur
 
 		Instances unlabeledInstances = getUnlabelledData().getDataset();
 
-		ThreadControl thread = isParallel() ? new ThreadControl("cores-peer-processors") : new ThreadControl(1);
+		ThreadControl thread = ThreadControl.defaultThreadControl(isParallel());
 
 		for (final Instance instance : unlabeledInstances) {
 

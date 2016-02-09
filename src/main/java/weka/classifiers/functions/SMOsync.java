@@ -59,7 +59,7 @@ public class SMOsync extends weka.classifiers.functions.SMO {
 
 	}
 
-	public double SVMOutput(Instance instance) {
+	public synchronized double SVMOutput(Instance instance) {
 		try {
 			return m_classifiers[0][1].SVMOutput(-1, instance);
 		} catch (Exception ex) {

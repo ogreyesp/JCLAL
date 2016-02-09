@@ -600,7 +600,9 @@ public class ExternalBasicChart extends JFrame {
 
 		final JFileChooser f = new JFileChooser();
 		f.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
-
+		
+		f.setCurrentDirectory(new File("./"));
+		
 		fileMenu.add("Add report file or directory").addActionListener(new ActionListener() {
 
 			@Override

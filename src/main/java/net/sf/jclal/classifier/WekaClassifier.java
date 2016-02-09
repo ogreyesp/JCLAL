@@ -96,7 +96,7 @@ public class WekaClassifier extends AbstractClassifier {
 
 			final double[][] evaluations = new double[testData.numInstances()][];
 
-			ThreadControl thread = isParallel() ? new ThreadControl("cores-peer-processors") : new ThreadControl(1);
+			ThreadControl thread = ThreadControl.defaultThreadControl(isParallel());
 
 			for (int i = 0; i < evaluations.length; i++) {
 
