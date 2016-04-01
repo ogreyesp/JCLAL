@@ -244,7 +244,7 @@ public class ExternalBasicChart extends JFrame {
 		setJMenuBar(menubar);
 		setTitle(windowsTitle);
 		setContentPane(this.content);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
 	}
 

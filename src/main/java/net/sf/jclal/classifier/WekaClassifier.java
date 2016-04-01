@@ -134,8 +134,12 @@ public class WekaClassifier extends AbstractClassifier {
 
 	@Override
 	public String toString() {
-		return classifier.getClass().getSimpleName();
-	}
+        StringBuilder extra = new StringBuilder();
+        ThreadControl c = ThreadControl.defaultThreadControl(isParallel());
+        extra.append("-").append(c.getDefaultCores()).append("cores");
+
+        return classifier.getClass().getSimpleName().concat(extra.toString());
+    }
 
 	/**
 	 * Set the classifier to use.

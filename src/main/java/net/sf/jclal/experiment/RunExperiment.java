@@ -135,7 +135,7 @@ public class RunExperiment {
 		}
 
 		String cores = Utils.getOption("cores-per-processor", args);
-		System.setProperty("cores-per-processor", cores);
+        System.setProperty("cores-per-processor", cores);
 
 		String cfg = Utils.getOption("cfg", args);
 		if (!cfg.isEmpty()) {

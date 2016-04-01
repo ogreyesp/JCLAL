@@ -236,16 +236,18 @@ public class WekaComitteClassifier extends AbstractClassifier {
 	@Override
 	public String toString() {
 
-		StringBuilder st = new StringBuilder();
+        StringBuilder st = new StringBuilder();
 
-		for (Classifier cl : classifiers) {
-			st.append(cl.getClass().getSimpleName() + "-");
-		}
+        for (Classifier cl : classifiers) {
+            st.append(cl.getClass().getSimpleName()).append("-");
+        }
 
-		st.deleteCharAt(st.length() - 1);
+        StringBuilder extra = new StringBuilder();
+        ThreadControl c = ThreadControl.defaultThreadControl(isParallel());
+        extra.append(c.getDefaultCores()).append("cores");
 
-		return st.toString();
-	}
+        return st.toString().concat(extra.toString());
+    }
 
 	/**
 	 * Set the committee of classifiers
@@ -290,6 +292,8 @@ public class WekaComitteClassifier extends AbstractClassifier {
 	 */
 	@Override
 	public void configure(Configuration configuration) {
+		
+		super.configure(configuration);
 
 		String classifierError = "classifier type= ";
 		try {

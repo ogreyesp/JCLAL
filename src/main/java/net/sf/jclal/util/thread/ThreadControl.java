@@ -15,8 +15,12 @@
  */
 package net.sf.jclal.util.thread;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -32,7 +36,7 @@ public class ThreadControl {
 	 * The executor.
 	 */
 	private ExecutorService executor;
-
+	private List<Future<?>> futures;
 	/**
 	 * Quantity of processors
 	 */
@@ -46,11 +50,10 @@ public class ThreadControl {
 
 	/**
 	 * Constructor
-	 * 
+	 *
 	 * Init the class with a number of threads.
 	 *
-	 * @param numberOfCores
-	 *            The number of threads.
+	 * @param numberOfCores The number of threads.
 	 */
 	public ThreadControl(int numberOfCores) {
 		init(numberOfCores);
@@ -59,11 +62,10 @@ public class ThreadControl {
 	/**
 	 * Constructor
 	 *
-	 * @param systemProperty
-	 *            String representing a property assigned with the method
-	 *            'System.setProperty()', this will be retrieved with
-	 *            'System.getProperty()', the returned value have to represent a
-	 *            integer number or 'all' indicating employ all the cores.
+	 * @param systemProperty String representing a property assigned with the
+	 * method 'System.setProperty()', this will be retrieved with
+	 * 'System.getProperty()', the returned value have to represent a integer
+	 * number or 'all' indicating employ all the cores.
 	 */
 	public ThreadControl(String systemProperty) {
 		String value = System.getProperty(systemProperty);
@@ -82,7 +84,7 @@ public class ThreadControl {
 			} catch (NumberFormatException ex) {
 				java.util.logging.Logger.getLogger(ThreadControl.class.getName()).log(Level.WARNING,
 						"\nThe property << " + systemProperty + " >> " + "was not set correctly. "
-								+ "Default value of << 1 >> was assigned.\n",
+						+ "Default value of << 1 >> was assigned.\n",
 						ex);
 			}
 		}
@@ -93,8 +95,7 @@ public class ThreadControl {
 	/**
 	 * Init the parallel executor.
 	 *
-	 * @param numberOfCores
-	 *            The number of threads to use.
+	 * @param numberOfCores The number of threads to use.
 	 */
 	public void init(int numberOfCores) {
 		defaultCores = numberOfCores;
@@ -106,16 +107,16 @@ public class ThreadControl {
 	 */
 	public void init() {
 		executor = Executors.newFixedThreadPool(defaultCores);
+		futures = new LinkedList<Future<?>>();
 	}
 
 	/**
 	 * Execute a task.
 	 *
-	 * @param task
-	 *            A new task.
+	 * @param task A new task.
 	 */
 	public void execute(Runnable task) {
-		executor.execute(task);
+		futures.add(executor.submit(task));
 	}
 
 	/**
@@ -125,15 +126,22 @@ public class ThreadControl {
 	public void end() {
 		if (executor != null) {
 			executor.shutdown();
-			while (!executor.isTerminated()) {
+
+			for (Future<?> future : futures) {
 				try {
-					Thread.sleep(1);
+					future.get();
 				} catch (InterruptedException ex) {
-					Logger.getLogger(ThreadControl.class.getName()).log(Level.SEVERE, null, ex);
+					Logger.getLogger(ThreadControl.class.getName())
+							.log(Level.WARNING, null, ex);
+				} catch (ExecutionException ex) {
+					Logger.getLogger(ThreadControl.class.getName())
+							.log(Level.WARNING, null, ex);
 				}
 			}
-			executor.shutdownNow();
+			
 			executor = null;
+			futures.clear();
+			futures = null;
 		}
 	}
 
@@ -145,25 +153,25 @@ public class ThreadControl {
 		this.defaultCores = defaultCores;
 	}
 
-    /**
-     * Takes like default system property "cores-per-processor".
-     *
-     * @param isParallelContext
-     * @return
-     */
-    public static ThreadControl defaultThreadControl(boolean isParallelContext) {
-        return defaultThreadControl(isParallelContext, "cores-per-processor");
-}
+	/**
+	 * Takes like default system property "cores-peer-processor".
+	 *
+	 * @param isParallelContext
+	 * @return
+	 */
+	public static ThreadControl defaultThreadControl(boolean isParallelContext) {
+		return defaultThreadControl(isParallelContext, "cores-per-processor");
+	}
 
-    /**
-     *
-     * @param isParallelContext
-     * @return
-     */
-    public static ThreadControl defaultThreadControl(boolean isParallelContext,
-            String systemProperty) {
+	/**
+	 *
+	 * @param isParallelContext
+	 * @return
+	 */
+	public static ThreadControl defaultThreadControl(boolean isParallelContext,
+			String systemProperty) {
 
-        return isParallelContext
-                ? new ThreadControl(systemProperty) : new ThreadControl(1);
-    }
+		return isParallelContext
+				? new ThreadControl(systemProperty) : new ThreadControl(1);
+	}
 }

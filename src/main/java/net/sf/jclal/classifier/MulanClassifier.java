@@ -42,7 +42,7 @@ import weka.core.Instance;
  * 
  * @author Oscar Gabriel Reyes Pupo
  * @author Eduardo Perez Perdomo
- */
+ */ 
 public class MulanClassifier extends AbstractClassifier {
 
 	private static final long serialVersionUID = -1013631694911281355L;

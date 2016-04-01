@@ -458,9 +458,12 @@ public abstract class AbstractQueryStrategy implements IQueryStrategy, IConfigur
 
 	@Override
 	public String toString() {
+        StringBuilder extra = new StringBuilder();
+        ThreadControl c = ThreadControl.defaultThreadControl(isParallel());
+        extra.append("-").append(c.getDefaultCores()).append("cores");
 
-		return this.getClass().getSimpleName();
-	}
+        return this.getClass().getSimpleName().concat(extra.toString());
+    }
 
 	/**
 	 * {@inheritDoc}

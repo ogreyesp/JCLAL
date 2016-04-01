@@ -200,4 +200,8 @@ public class GraphicalReporterListener extends ClassicalReporterListener impleme
 	public void setShowSeparateWindow(boolean showSeparateWindow) {
 		this.showSeparateWindow = showSeparateWindow;
 	}
+	
+	public ExternalBasicChart getExternalChart() {
+        return externalChart;
+    } 
 }

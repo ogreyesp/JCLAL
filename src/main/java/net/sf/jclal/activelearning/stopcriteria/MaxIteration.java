@@ -23,7 +23,7 @@ import net.sf.jclal.core.IConfigure;
 import net.sf.jclal.core.IStopCriterion;
 
 /**
- * Class that represents a stop criterion related with the max of iterations.
+ * Class that represents a stop criterion related with the maximum of iterations.
  *
  * @author Oscar Gabriel Reyes Pupo
  * @author Eduardo Perez Perdomo
@@ -42,8 +42,7 @@ public class MaxIteration implements IStopCriterion, IConfigure {
             // If maximum number of iterations is exceeded, the algorithm is
             // finished
 
-
-        return ((ClassicalALAlgorithm) algorithm).getIteration() >= maxIteration;
+        return ((ClassicalALAlgorithm) algorithm).getIteration() > maxIteration;
     }
 
 	/**
