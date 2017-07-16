@@ -15,7 +15,7 @@
 
 # Documentation
 
-You'll find the documentation and information of the API inside the directory `doc/` along with the original `*.javadoc.jar` file. Also, do check for simple examples the [jclal-1.1-documentation.pdf](https://github.com/mlliarm/JCLAL/blob/master/jclal-1.1-documentation.pdf).
+You'll find the documentation and information of the API inside the directory `docs/` along with the original `*.javadoc.jar` file. Also, do check for simple examples the [jclal-1.1-documentation.pdf](https://github.com/mlliarm/JCLAL/blob/master/jclal-1.1-documentation.pdf).
 
 # Using JCLAL
 
