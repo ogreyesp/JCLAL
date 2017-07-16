@@ -100,7 +100,7 @@ Taken from the file [CHANGELIST](https://github.com/mlliarm/JCLAL/blob/master/CH
 
 - We have included a real-usage scenario, where the user provides a small labeled set from which the initial classifier is trained, and an unlabeled set for determining the unlabeled instances that should be query in each iteration. In each iteration, the unlabeled instances selected are showed to the user, the user labels the instances and they are added to labeled set.  This real-usage scenario allows to obtain the set of labeled instances at the end of the session for further analysis.
 
--Several new features were added to the ExternalBasicChart class, e.g. curve options, view dash types, view shapes, export the graphics in EPS and SVG formats.
+- Several new features were added to the ExternalBasicChart class, e.g. curve options, view dash types, view shapes, export the graphics in EPS and SVG formats.
 
 - The KnearestDistanceContainer class was added. It extends DistanceContainer class and allows to store the distance between an instance and its k-nearest neighbours.
 
@@ -112,7 +112,7 @@ Taken from the file [CHANGELIST](https://github.com/mlliarm/JCLAL/blob/master/CH
 
 - The LCI and MMU multi-label strategies were added. (Li, X., & Guo, Y. 2013. Active Learning with Multi-label SVM Classification.)
 
--Supports for incremental classifiers of MOA library.
+- Supports for incremental classifiers of MOA library.
 
 ## Deleted
 
