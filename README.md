@@ -31,6 +31,49 @@ The user can download the current version of JCLAL from:
 
 You'll find the documentation and API inside the directory `doc/` along with the original `*.javadoc.jar` file.
 
+# Using JCLAL
+
+The fastest way to use JCLAL is from the terminal. In the following examples it's assumed that you have a GNU/Linux flavor, and Java installed (v1.7+).
+
+The examples are taken from the [jclal-1.1-documentation.pdf](https://github.com/mlliarm/JCLAL/blob/master/jclal-1.1-documentation.pdf)
+page 16-18.
+
+## Configuring an experiment
+
+The good thing with JCLAL is that the user has to deal only with one XML configuration file per experiment, where all the parameters are tuned according to his needs.
+
+The most important parameters that the user can control are:
+
+ 1. **The evaluation method**
+ 2. **The dataset**
+ 3. **Labelled and unlabelled sets**
+ 4. **The Active Learning algorithm**
+ 5. **The stopping criteria**
+ 6. **The AL scenario**
+ 7. **The query strategy**
+ 8. **The oracle**: there are provided two types of oracle. A simulated one and one that interacts with the user (Console Human Oracle).
+ 9. **Listeners**: we can define how the results of the experiment will be presented. The default method is storing the results in reports, in the `reports` directory.
+ 
+You can see examples of XML configuration files (`cfg`) in the `examples` directory.
+
+## Executing an experiment
+
+Once the user has created a XML config. file, the fastest way to execute an experiment is from the terminal: 
+
+```sh
+$ java -jar jclal-1.1.jar -cfg example/SingleLabel/HoldOut/EntropySamplingQueryStrategy.cfg
+```
+
+One can run multiple experiments, by feeding JCLAL all the `cfg` files that exist in a directory, in our example `HoldOut`:
+
+```sh
+$ java -jar jclal-1.1.jar -d examples/SingleLabel/HoldOut
+```
+
+## Visualizations
+
+It is possible to see the learning curve in each experiment by invoking `net.sf.jclal.gui.view.components.chart.ExternalBasicChart`.
+
 # Development
 
 If you find a bug, send a [pull request](https://yangsu.github.io/pull-request-tutorial/) and we'll discuss things.
