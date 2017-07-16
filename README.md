@@ -19,14 +19,14 @@ JCLAL framework is open source software and it is distributed under the GNU gene
 
 The user can download the current version of JCLAL from:
 
- SourceForge: [http://sourceforge.net/projects/jclal/files/]
+ SourceForge: <http://sourceforge.net/projects/jclal/files/>
 
- GitHub: [https://github.com/ogreyesp/JCLAL/archive/master.zip] or fork/`git clone` the source.
+ GitHub: <https://github.com/ogreyesp/JCLAL/archive/master.zip> or fork/`git clone` the source.
 
- Maven repository: [http://search.maven.org/remotecontent?filepath=net/sf/jclal/jclal/1.1/]
-		  [http://mvnrepository.com/artifact/net.sf.jclal/jclal/1.1]
+ Maven repository: <http://search.maven.org/remotecontent?filepath=net/sf/jclal/jclal/1.1/>
+		  <http://mvnrepository.com/artifact/net.sf.jclal/jclal/1.1>
 
- Sonatype OSSRH repository: [https://oss.sonatype.org/#nexus-search;quick~jclal]
+ Sonatype OSSRH repository: <https://oss.sonatype.org/#nexus-search;quick~jclal>
 
 The source code can be obtained using SVN, GIT and Mercurial via SourceForge. The source code can be also obtained unsing GIT via GitHub. The source code of JCLAL is free and available under the GNU General Public License (GPL) v3. Thus, it can be distributed and modified without any fee.
 
