@@ -28,8 +28,6 @@ The user can download the current version of JCLAL from:
 
  Sonatype OSSRH repository: <https://oss.sonatype.org/#nexus-search;quick~jclal>
 
-The source code can be obtained using SVN, GIT and Mercurial via SourceForge. The source code can be also obtained unsing GIT via GitHub. The source code of JCLAL is free and available under the GNU General Public License (GPL) v3. Thus, it can be distributed and modified without any fee.
-
 # Documentation
 
 You'll find the documentation and API inside the directory `doc/` along with the original `*.javadoc.jar` file.
