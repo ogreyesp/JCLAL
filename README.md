@@ -1,11 +1,14 @@
----
-JCLAL
-A Java Class Library for Active Learning 
-                
-9 February 2016
+***
+                                 JCLAL
+                A Java Class Library for Active Learning
 
-version 1.1
----
+                            9 February 2016
+
+                             version 1.1
+
+                    web: http://jclal.sourceforge.net
+                    https://github.com/ogreyesp/JCLAL
+***
 
 # Introduction
 
