@@ -6,8 +6,8 @@
 
                              version 1.1
 
-                      [http://jclal.sourceforge.net]
-                   [https://github.com/ogreyesp/JCLAL]
+                      <http://jclal.sourceforge.net>
+                   <https://github.com/ogreyesp/JCLAL>
 ***
 
 # Introduction
