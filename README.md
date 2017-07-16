@@ -38,6 +38,6 @@ You'll find the documentation and API inside the directory `doc/` along with the
 
 If you have implemented an active learning strategy, scenario or extension using the JCLAL classes, and you would like to make it available to the community, please submit your contribution to ogreyesp@gmail.com.
 
-# Bugs
-
 If you find any bugs, please send a bug report to ogreyesp@gmail.com. Any comment or constribution will be well received.
+
+*Or*, of course, you can do it the github way, and send a pull request with your issue and we can discuss it.
