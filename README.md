@@ -19,14 +19,14 @@ JCLAL framework is open source software and it is distributed under the GNU gene
 
 The user can download the current version of JCLAL from:
 
- SourceForge: <http://sourceforge.net/projects/jclal/files/>
+ * SourceForge: <http://sourceforge.net/projects/jclal/files/>
 
- GitHub: <https://github.com/ogreyesp/JCLAL/archive/master.zip> or fork/`git clone` the source.
+ * GitHub: <https://github.com/ogreyesp/JCLAL/archive/master.zip> or fork/`git clone` the source.
 
- Maven repository: <http://search.maven.org/remotecontent?filepath=net/sf/jclal/jclal/1.1/>
+ * Maven repository: <http://search.maven.org/remotecontent?filepath=net/sf/jclal/jclal/1.1/>
 		  <http://mvnrepository.com/artifact/net.sf.jclal/jclal/1.1>
 
- Sonatype OSSRH repository: <https://oss.sonatype.org/#nexus-search;quick~jclal>
+ * Sonatype OSSRH repository: <https://oss.sonatype.org/#nexus-search;quick~jclal>
 
 # Documentation
 
@@ -34,8 +34,4 @@ You'll find the documentation and API inside the directory `doc/` along with the
 
 # Development
 
-If you have implemented an active learning strategy, scenario or extension using the JCLAL classes, and you would like to make it available to the community, please submit your contribution to ogreyesp@gmail.com.
-
-If you find any bugs, please send a bug report to ogreyesp@gmail.com. Any comment or constribution will be well received.
-
-*Or*, of course, you can do it the github way, and send a pull request with your issue and we can discuss it.
+If you find a bug, send a [pull request](https://yangsu.github.io/pull-request-tutorial/) and we'll discuss things.
