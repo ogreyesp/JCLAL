@@ -29,7 +29,7 @@ The user can download the current version of JCLAL from:
 
 # Documentation
 
-You'll find the documentation and API inside the directory `doc/` along with the original `*.javadoc.jar` file.
+You'll find the documentation and information of the API inside the directory `doc/` along with the original `*.javadoc.jar` file. Also, do check for simple examples the [jclal-1.1-documentation.pdf](https://github.com/mlliarm/JCLAL/blob/master/jclal-1.1-documentation.pdf).
 
 # Using JCLAL
 
