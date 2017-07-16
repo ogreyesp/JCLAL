@@ -3,6 +3,7 @@
                 A Java Class Library for Active Learning
 
                             9 February 2016
+			Oscar Gabriel Reyes Pupo							
 
                              version 1.1
 
