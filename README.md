@@ -1,5 +1,4 @@
 =====================================================================
-                                                                     
 	                         JCLAL
 		A Java Class Library for Active Learning 
                 
