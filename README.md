@@ -1,5 +1,4 @@
-=====================================================================
-
+---
 	                         JCLAL
 		A Java Class Library for Active Learning 
                 
@@ -9,7 +8,7 @@
                                                                        		 
            	    web: http://jclal.sourceforge.net
 			 https://github.com/ogreyesp/JCLAL          
-=====================================================================
+---
 
 # Introduction
 
