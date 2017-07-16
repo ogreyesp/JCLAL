@@ -13,6 +13,17 @@
 
 `JCLAL` framework is open source software and it is distributed under the GNU general public license. It is constructed with a high-level software environment, with a strong object oriented design and use of design patterns, which allow to the developers reuse, modify and extend the framework. Up to date, JCLAL uses the WEKA (http://weka.sourceforge.net) and MULAN (http://mulan.sourceforge.net) libraries to implement the most significant query strategies that have appeared on the single-label and multi-label learning paradigms. For next versions, we hope to include query strategies related with multi-instance and multi-label-multi-instance learning paradigms.
 
+# Download
+
+SourceForge: <http://sourceforge.net/projects/jclal/files/>
+
+GitHub: <https://github.com/ogreyesp/JCLAL/archive/master.zip>
+
+Maven repository: <http://search.maven.org/remotecontent?filepath=net/sf/jclal/jclal/1.1/>
+ 		  <http://mvnrepository.com/artifact/net.sf.jclal/jclal/1.1>
+
+Sonatype OSSRH repository: <https://oss.sonatype.org/#nexus-search;quick~jclal>
+
 # Documentation
 
 You'll find the documentation and information of the API inside the directory `docs/` along with the original `*.javadoc.jar` file. Also, do check for simple examples the [jclal-1.1-documentation.pdf](https://github.com/mlliarm/JCLAL/blob/master/jclal-1.1-documentation.pdf).
